@@ -1,0 +1,25 @@
+﻿@model InsuranceExpenseViewModel
+
+<div class="container mt-4">
+    <h2 class="mb-3">Добавяне на застраховка</h2>
+    <form asp-action="Add" method="post" class="border p-4 rounded shadow bg-light">
+        <div class="mb-3">
+            <label class="form-label">Автомобил:</label>
+            <input asp-for="CarId" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Компания:</label>
+            <input asp-for="Provider" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Цена:</label>
+            <input asp-for="Amount" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Валидност:</label>
+            <input asp-for="EndDate" type="date" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-success">Добави</button>
+        <a href="@Url.Action("Index")" class="btn btn-secondary">Назад</a>
+    </form>
+</div>

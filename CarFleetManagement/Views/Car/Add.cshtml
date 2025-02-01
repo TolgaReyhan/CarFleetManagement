@@ -1,0 +1,25 @@
+﻿@model CarViewModel
+
+<div class="container mt-4">
+    <h2 class="mb-3">Добавяне на автомобил</h2>
+    <form asp-action="Add" method="post" class="border p-4 rounded shadow bg-light">
+        <div class="mb-3">
+            <label class="form-label">Модел:</label>
+            <input asp-for="Model" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Рег. номер:</label>
+            <input asp-for="RegistrationNumber" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Дата на закупуване:</label>
+            <input asp-for="PurchaseDate" type="date" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Пробег (км):</label>
+            <input asp-for="Mileage" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-success">Добави</button>
+        <a href="@Url.Action("Index")" class="btn btn-secondary">Назад</a>
+    </form>
+</div>

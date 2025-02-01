@@ -1,0 +1,27 @@
+﻿@model List<FuelExpenseViewModel>
+
+<div class="container mt-4">
+    <h2 class="mb-3">Разходи за гориво</h2>
+    <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Автомобил</th>
+                <th>Литри</th>
+                <th>Цена</th>
+                <th>Дата</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var expense in Model)
+            {
+                <tr>
+                    <td>@expense.CarId</td>
+                    <td>@expense.Liters</td>
+                    <td>@expense.Amount</td>
+                    <td>@expense.Date.ToShortDateString()</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a href="@Url.Action("Add")" class="btn btn-primary">Добави разход за гориво</a>
+</div>

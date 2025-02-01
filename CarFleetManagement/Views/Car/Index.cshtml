@@ -1,0 +1,27 @@
+﻿@model List<CarViewModel>
+
+<div class="container mt-4">
+    <h2 class="mb-3">Списък с автомобили</h2>
+    <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Модел</th>
+                <th>Рег. номер</th>
+                <th>Дата на закупуване</th>
+                <th>Пробег (км)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var car in Model)
+            {
+                <tr>
+                    <td>@car.Model</td>
+                    <td>@car.RegistrationNumber</td>
+                    <td>@car.PurchaseDate.ToShortDateString()</td>
+                    <td>@car.Mileage</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a href="@Url.Action("Add")" class="btn btn-primary">Добави нов автомобил</a>
+</div>

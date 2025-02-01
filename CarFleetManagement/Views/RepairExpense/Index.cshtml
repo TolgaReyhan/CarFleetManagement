@@ -1,0 +1,27 @@
+﻿@model List<RepairExpenseViewModel>
+
+<div class="container mt-4">
+    <h2 class="mb-3">Ремонти</h2>
+    <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Автомобил</th>
+                <th>Описание</th>
+                <th>Цена</th>
+                <th>Дата</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var repair in Model)
+            {
+                <tr>
+                    <td>@repair.CarId</td>
+                    <td>@repair.Description</td>
+                    <td>@repair.Cost</td>
+                    <td>@repair.Date.ToShortDateString()</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a href="@Url.Action("Add")" class="btn btn-primary">Добави ремонт</a>
+</div>
