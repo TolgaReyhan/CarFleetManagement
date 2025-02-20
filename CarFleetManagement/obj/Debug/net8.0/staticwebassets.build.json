@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "m+mx0NwSWq3ag4xCCdvWSJWqqgZAo2AaIDz/5D1qMNs=",
+  "Hash": "/rtrGxPjLp5JSlYjor7la0Fgt6agB1bF+lykBosHDc0=",
   "Source": "CarFleetManagement",
   "BasePath": "_content/CarFleetManagement",
   "Mode": "Default",
@@ -1359,6 +1359,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\wwwroot\\images\\1.jpg",
+      "SourceId": "CarFleetManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\wwwroot\\",
+      "BasePath": "_content/CarFleetManagement",
+      "RelativePath": "images/1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yyyn7r4n6g",
+      "Integrity": "Njxi3MP9ARDAkVkoPTGYkh5zERcpuXe3vA/h6dg1xMA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\1.jpg"
     },
     {
       "Identity": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\wwwroot\\js\\site.js",
@@ -5125,6 +5146,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s="
+        }
+      ]
+    },
+    {
+      "Route": "images/1.jpg",
+      "AssetFile": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\wwwroot\\images\\1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "455772"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Njxi3MP9ARDAkVkoPTGYkh5zERcpuXe3vA/h6dg1xMA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 08:45:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Njxi3MP9ARDAkVkoPTGYkh5zERcpuXe3vA/h6dg1xMA="
+        }
+      ]
+    },
+    {
+      "Route": "images/1.yyyn7r4n6g.jpg",
+      "AssetFile": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\wwwroot\\images\\1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "455772"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Njxi3MP9ARDAkVkoPTGYkh5zERcpuXe3vA/h6dg1xMA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 08:45:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yyyn7r4n6g"
+        },
+        {
+          "Name": "label",
+          "Value": "images/1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Njxi3MP9ARDAkVkoPTGYkh5zERcpuXe3vA/h6dg1xMA="
         }
       ]
     },

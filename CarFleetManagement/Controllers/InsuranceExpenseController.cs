@@ -37,8 +37,6 @@ namespace CarFleetManagement.Controllers
         [HttpPost]
         public IActionResult Add(InsuranceExpenseViewModel model)
         {
-            if (ModelState.IsValid)
-            {
                 var insurance = new InsuranceExpense
                 {
                     CarId = model.CarId,
@@ -51,9 +49,6 @@ namespace CarFleetManagement.Controllers
                 db.SaveChanges();
 
                 return RedirectToAction("Index");
-            }
-
-            return View(model);
         }
     }
 }

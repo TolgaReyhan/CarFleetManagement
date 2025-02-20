@@ -37,8 +37,7 @@ namespace CarFleetManagement.Controllers
         [HttpPost]
         public IActionResult Add(FuelExpenseViewModel model)
         {
-            if (ModelState.IsValid)
-            {
+        
                 var expense = new FuelExpense
                 {
                     CarId = model.CarId,
@@ -51,9 +50,6 @@ namespace CarFleetManagement.Controllers
                 db.SaveChanges();
 
                 return RedirectToAction("Index");
-            }
-
-            return View(model);
         }
     }
 }

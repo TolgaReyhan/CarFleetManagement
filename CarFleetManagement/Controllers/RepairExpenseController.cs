@@ -37,8 +37,6 @@ namespace CarFleetManagement.Controllers
         [HttpPost]
         public IActionResult Add(RepairExpenseViewModel model)
         {
-            if (ModelState.IsValid)
-            {
                 var repair = new RepairExpense
                 {
                     CarId = model.CarId,
@@ -51,9 +49,6 @@ namespace CarFleetManagement.Controllers
                 db.SaveChanges();
 
                 return RedirectToAction("Index");
-            }
-
-            return View(model);
         }
     }
 }

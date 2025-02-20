@@ -35,25 +35,21 @@ namespace CarFleetManagement.Controllers
         }
 
         [HttpPost]
-        public IActionResult Add(CarViewModel model)
+        public IActionResult Add(CarViewModel input)
         {
-            if (ModelState.IsValid)
+            
+            var car = new Car
             {
-                var car = new Car
-                {
-                    Model = model.Model,
-                    RegistrationNumber = model.RegistrationNumber,
-                    PurchaseDate = model.PurchaseDate,
-                    Mileage = model.Mileage
-                };
+                Model = input.Model,
+                RegistrationNumber = input.RegistrationNumber,
+                PurchaseDate = input.PurchaseDate,
+                Mileage = input.Mileage
+            };
 
-                db.Cars.Add(car);
-                db.SaveChanges();
+            db.Cars.Add(car);
+            db.SaveChanges();
 
-                return RedirectToAction("Index");
-            }
-
-            return View(model);
+            return RedirectToAction("Index");
         }
     }
 }
