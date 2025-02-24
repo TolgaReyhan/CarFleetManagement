@@ -142,8 +142,7 @@
               "RelativeToolTip": "CarFleetManagement\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-20T08:32:29.257Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T08:32:29.257Z"
             },
             {
               "$type": "Document",
@@ -155,8 +154,7 @@
               "RelativeToolTip": "CarFleetManagement\\Controllers\\HomeController.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T08:25:38.115Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T08:25:38.115Z"
             },
             {
               "$type": "Document",
@@ -168,8 +166,7 @@
               "RelativeToolTip": "CarFleetManagement\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAACoAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-01T16:57:41.079Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-01T16:57:41.079Z"
             },
             {
               "$type": "Document",
@@ -191,7 +188,7 @@
               "RelativeDocumentMoniker": "CarFleetManagement\\Views\\MonthlyReport\\Index.cshtml",
               "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\MonthlyReport\\Index.cshtml",
               "RelativeToolTip": "CarFleetManagement\\Views\\MonthlyReport\\Index.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAswBgAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAswCMAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-01T16:26:43.945Z",
               "EditorCaption": ""
