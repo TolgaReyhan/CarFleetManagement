@@ -9,10 +9,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace CarFleetManagement.Data.Migrations
+namespace CarFleetManagement.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250201113801_InicialCreate")]
+    [Migration("20250226154911_InicialCreate")]
     partial class InicialCreate
     {
         /// <inheritdoc />

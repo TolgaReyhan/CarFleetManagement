@@ -153,3 +153,4 @@ D:\Visual studio\VS programs\CarFleetManagement\CarFleetManagement\bin\Debug\net
 D:\Visual studio\VS programs\CarFleetManagement\CarFleetManagement\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 D:\Visual studio\VS programs\CarFleetManagement\CarFleetManagement\obj\Debug\net8.0\staticwebassets\msbuild.CarFleetManagement.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 D:\Visual studio\VS programs\CarFleetManagement\CarFleetManagement\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\Visual studio\VS programs\CarFleetManagement\CarFleetManagement\obj\Debug\net8.0\CarFleetManagement.sourcelink.json
