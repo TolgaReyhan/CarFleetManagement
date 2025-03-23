@@ -2,16 +2,19 @@
 using CarFleetManagement.Data;
 using CarFleetManagement.Models;
 using Microsoft.AspNetCore.Mvc;
+using CarFleetManagement.Contracts;
 
 namespace CarFleetManagement.Controllers
 {
     public class MonthlyReportController : Controller
     {
         private readonly ApplicationDbContext db;
+        private readonly ICarService carService;
 
-        public MonthlyReportController(ApplicationDbContext db)
+        public MonthlyReportController(ApplicationDbContext db, ICarService carService)
         {
             this.db = db;
+            this.carService = carService;
         }
 
         public IActionResult Index()
@@ -36,6 +39,8 @@ namespace CarFleetManagement.Controllers
 
         public IActionResult Add()
         {
+            Dictionary<int, string> carIdNames = carService.GetCarNamesAndIds();
+            ViewData["car-info"] = carIdNames;
             return View();
         }
 

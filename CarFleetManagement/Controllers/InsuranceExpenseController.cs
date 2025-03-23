@@ -1,4 +1,5 @@
-﻿using CarFleetManagement.Data;
+﻿using CarFleetManagement.Contracts;
+using CarFleetManagement.Data;
 using CarFleetManagement.Data.Models;
 using CarFleetManagement.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -9,9 +10,12 @@ namespace CarFleetManagement.Controllers
     {
         private readonly ApplicationDbContext db;
 
-        public InsuranceExpenseController(ApplicationDbContext db)
+        private readonly ICarService carService;
+
+        public InsuranceExpenseController(ApplicationDbContext db, ICarService carService)
         {
             this.db = db;
+            this.carService = carService;
         }
 
         public IActionResult Index()
@@ -31,6 +35,8 @@ namespace CarFleetManagement.Controllers
 
         public IActionResult Add()
         {
+            Dictionary<int, string> carIdNames = carService.GetCarNamesAndIds();
+            ViewData["car-info"] = carIdNames;
             return View();
         }
 

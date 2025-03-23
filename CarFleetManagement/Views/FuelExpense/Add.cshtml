@@ -1,12 +1,29 @@
 ﻿@model FuelExpenseViewModel
 
+@{
+    Dictionary<int, string> carData = ViewData["car-info"] as Dictionary<int, string>;
+}
+
+
 <div class="container mt-4">
     <h2 class="mb-3">Добавяне на разход за гориво</h2>
     <form asp-action="Add" method="post" class="border p-4 rounded shadow bg-light">
+
         <div class="mb-3">
             <label class="form-label" style="color:black">Автомобил:</label>
-            <input asp-for="CarId" class="form-control" />
+            <select asp-for="CarId" class="form-control">
+                <option value="">Изберете кола</option>
+                @foreach (var car in carData)
+                {
+                    <option value="@car.Key">@car.Value</option>
+                }
+            </select>
         </div>
+
+
+
+
+
         <div class="mb-3">
             <label class="form-label" style="color:black">Литри:</label>
             <input asp-for="Liters" class="form-control" />
