@@ -6,8 +6,7 @@ namespace CarFleetManagement.Data.Models
     public class MonthlyReport
     {
         public int Id { get; set; }
-        public int Year { get; set; }  // Година на справката
-        public int Month { get; set; } // Месец на справката
+        public DateTime Date { get; set; }
         public decimal FuelLiters { get; set; } // Изразходвано гориво (литри)
         public decimal FuelCost { get; set; } // Стойност на горивото
         public int TotalKilometers { get; set; } // Изминати километри

@@ -30,8 +30,7 @@ namespace CarFleetManagement.Controllers
                     TotalRepairs = r.TotalRepairs,
                     RepairCost = r.RepairCost,
                     InsuranceCount = r.InsuranceCount,
-                    Month = r.Month,
-                    Year = r.Year
+                    Date = r.Date
                 }).ToList();
 
             return View(reports);
@@ -56,8 +55,7 @@ namespace CarFleetManagement.Controllers
                     TotalRepairs = model.TotalRepairs,
                     RepairCost = model.RepairCost,
                     InsuranceCount = model.InsuranceCount,
-                    Month = model.Month,
-                    Year = model.Year
+                    Date = model.Date
                 };
 
                 db.MonthlyReports.Add(report);

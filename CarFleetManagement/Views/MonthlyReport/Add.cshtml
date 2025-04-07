@@ -40,12 +40,8 @@
             <input asp-for="InsuranceCount" class="form-control" />
         </div>
         <div class="mb-3">
-            <label class="form-label" style="color:black">Месец:</label>
-            <input asp-for="Month" class="form-control" />
-        </div>
-        <div class="mb-3">
-            <label class="form-label" style="color:black">Година:</label>
-            <input asp-for="Year" class="form-control" />
+            <label class="form-label" style="color:black">Дата:</label>
+            <input asp-for="Date" type="date" class="form-control" />
         </div>
         <button type="submit" class="btn btn-success">Добави</button>
         <a href="@Url.Action("Index")" class="btn btn-secondary">Назад</a>

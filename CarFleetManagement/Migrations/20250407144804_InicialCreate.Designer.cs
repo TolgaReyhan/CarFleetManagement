@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CarFleetManagement.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250323192333_InicialCreate")]
+    [Migration("20250407144804_InicialCreate")]
     partial class InicialCreate
     {
         /// <inheritdoc />
@@ -121,6 +121,9 @@ namespace CarFleetManagement.Migrations
                     b.Property<int>("CarId")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
                     b.Property<decimal>("FuelCost")
                         .HasColumnType("decimal(18,2)");
 
@@ -130,9 +133,6 @@ namespace CarFleetManagement.Migrations
                     b.Property<int>("InsuranceCount")
                         .HasColumnType("int");
 
-                    b.Property<int>("Month")
-                        .HasColumnType("int");
-
                     b.Property<decimal>("RepairCost")
                         .HasColumnType("decimal(18,2)");
 
@@ -140,9 +140,6 @@ namespace CarFleetManagement.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("TotalRepairs")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Year")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
