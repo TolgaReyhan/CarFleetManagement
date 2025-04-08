@@ -9,6 +9,7 @@
                 <th>Литри</th>
                 <th>Цена</th>
                 <th>Дата</th>
+                <th>Действия</th>
             </tr>
         </thead>
         <tbody>
@@ -19,9 +20,14 @@
                     <td>@expense.Liters</td>
                     <td>@expense.Amount</td>
                     <td>@expense.Date.ToShortDateString()</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@expense.Id" class="btn btn-warning btn-sm">Редактирай</a>
+                        <a asp-action="Details" asp-route-id="@expense.Id" class="btn btn-info btn-sm">Детайли</a>
+                        <a asp-action="Delete" asp-route-id="@expense.Id" class="btn btn-danger btn-sm">Изтрий</a>
+                    </td>
                 </tr>
             }
         </tbody>
     </table>
-    <a href="@Url.Action("Add")" class="btn btn-primary">Добави разход за гориво</a>
+    <a href="@Url.Action("Add")" class="btn btn-primary mt-3">Добави разход за гориво</a>
 </div>

@@ -19,6 +19,11 @@
                     <td>@repair.Description</td>
                     <td>@repair.Cost</td>
                     <td>@repair.Date.ToShortDateString()</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@repair.Id" class="btn btn-warning btn-sm">Редактирай</a>
+                        <a asp-action="Details" asp-route-id="@repair.Id" class="btn btn-info btn-sm">Детайли</a>
+                        <a asp-action="Delete" asp-route-id="@repair.Id" class="btn btn-danger btn-sm">Изтрий</a>
+                    </td>
                 </tr>
             }
         </tbody>

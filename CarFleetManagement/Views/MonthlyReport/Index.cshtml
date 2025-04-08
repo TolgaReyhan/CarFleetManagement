@@ -27,6 +27,11 @@
                     <td>@report.RepairCost</td>
                     <td>@report.InsuranceCount</td>
                     <td>@report.Date</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@report.Id" class="btn btn-warning btn-sm">Редактирай</a>
+                        <a asp-action="Details" asp-route-id="@report.Id" class="btn btn-info btn-sm">Детайли</a>
+                        <a asp-action="Delete" asp-route-id="@report.Id" class="btn btn-danger btn-sm">Изтрий</a>
+                    </td>
                 </tr>
             }
         </tbody>

@@ -51,5 +51,79 @@ namespace CarFleetManagement.Controllers
 
             return RedirectToAction("Index");
         }
+        public IActionResult Edit(int id)
+        {
+            var car = db.Cars.FirstOrDefault(c => c.Id == id);
+            if (car == null) return NotFound();
+
+            var model = new CarViewModel
+            {
+                Id = car.Id,
+                Model = car.Model,
+                RegistrationNumber = car.RegistrationNumber,
+                PurchaseDate = car.PurchaseDate
+            };
+
+            return View(model);
+        }
+        [HttpPost]
+        public IActionResult Edit(CarViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var car = db.Cars.FirstOrDefault(c => c.Id == model.Id);
+                if (car == null) return NotFound();
+
+                car.Model = model.Model;
+                car.RegistrationNumber = model.RegistrationNumber;
+                car.PurchaseDate = model.PurchaseDate;
+
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+
+            return View(model);
+        }
+        public IActionResult Delete(int id)
+        {
+            var car = db.Cars.Find(id);
+            if (car == null) return NotFound();
+
+            var model = new CarViewModel
+            {
+                Id = car.Id,
+                Model = car.Model,
+                RegistrationNumber = car.RegistrationNumber,
+                PurchaseDate = car.PurchaseDate
+            };
+
+            return View(model);
+        }
+        [HttpPost, ActionName("Delete")]
+        public IActionResult DeleteConfirmed(int id)
+        {
+            var car = db.Cars.Find(id);
+            if (car == null) return NotFound();
+
+            db.Cars.Remove(car);
+            db.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
+        public IActionResult Details(int id)
+        {
+            var car = db.Cars.Find(id);
+            if (car == null) return NotFound();
+
+            var model = new CarViewModel
+            {
+                Id = car.Id,
+                Model = car.Model,
+                RegistrationNumber = car.RegistrationNumber,
+                PurchaseDate = car.PurchaseDate,
+            };
+
+            return View(model);
+        }
     }
 }

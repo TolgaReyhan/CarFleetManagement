@@ -28,12 +28,36 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Visual studio/VS programs/CarFleetManagement/CarFleetManagement/Views/Car/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual studio/VS programs/CarFleetManagement/CarFleetManagement/Views/Car/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual studio/VS programs/CarFleetManagement/CarFleetManagement/Views/Car/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Visual studio/VS programs/CarFleetManagement/CarFleetManagement/Views/Car/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Visual studio/VS programs/CarFleetManagement/CarFleetManagement/Views/FuelExpense/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVlbEV4cGVuc2VcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual studio/VS programs/CarFleetManagement/CarFleetManagement/Views/FuelExpense/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVlbEV4cGVuc2VcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual studio/VS programs/CarFleetManagement/CarFleetManagement/Views/FuelExpense/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVlbEV4cGVuc2VcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual studio/VS programs/CarFleetManagement/CarFleetManagement/Views/FuelExpense/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVlbEV4cGVuc2VcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Visual studio/VS programs/CarFleetManagement/CarFleetManagement/Views/FuelExpense/Index.cshtml]
@@ -52,6 +76,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdXJhbmNlRXhwZW5zZVxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Visual studio/VS programs/CarFleetManagement/CarFleetManagement/Views/InsuranceExpense/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdXJhbmNlRXhwZW5zZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual studio/VS programs/CarFleetManagement/CarFleetManagement/Views/InsuranceExpense/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdXJhbmNlRXhwZW5zZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual studio/VS programs/CarFleetManagement/CarFleetManagement/Views/InsuranceExpense/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdXJhbmNlRXhwZW5zZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Visual studio/VS programs/CarFleetManagement/CarFleetManagement/Views/InsuranceExpense/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdXJhbmNlRXhwZW5zZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -60,12 +96,36 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9udGhseVJlcG9ydFxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Visual studio/VS programs/CarFleetManagement/CarFleetManagement/Views/MonthlyReport/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9udGhseVJlcG9ydFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual studio/VS programs/CarFleetManagement/CarFleetManagement/Views/MonthlyReport/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9udGhseVJlcG9ydFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual studio/VS programs/CarFleetManagement/CarFleetManagement/Views/MonthlyReport/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9udGhseVJlcG9ydFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Visual studio/VS programs/CarFleetManagement/CarFleetManagement/Views/MonthlyReport/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9udGhseVJlcG9ydFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Visual studio/VS programs/CarFleetManagement/CarFleetManagement/Views/RepairExpense/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwYWlyRXhwZW5zZVxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual studio/VS programs/CarFleetManagement/CarFleetManagement/Views/RepairExpense/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwYWlyRXhwZW5zZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual studio/VS programs/CarFleetManagement/CarFleetManagement/Views/RepairExpense/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwYWlyRXhwZW5zZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual studio/VS programs/CarFleetManagement/CarFleetManagement/Views/RepairExpense/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwYWlyRXhwZW5zZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Visual studio/VS programs/CarFleetManagement/CarFleetManagement/Views/RepairExpense/Index.cshtml]

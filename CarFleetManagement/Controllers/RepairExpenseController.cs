@@ -4,6 +4,7 @@ using CarFleetManagement.Data.Models;
 using CarFleetManagement.Models;
 using CarFleetManagement.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace CarFleetManagement.Controllers
 {
@@ -43,18 +44,95 @@ namespace CarFleetManagement.Controllers
         [HttpPost]
         public IActionResult Add(RepairExpenseViewModel model)
         {
-                var repair = new RepairExpense
-                {
-                    CarId = model.CarId,
-                    Description = model.Description,
-                    Cost = model.Cost,
-                    Date = model.Date
-                };
+            var repair = new RepairExpense
+            {
+                CarId = model.CarId,
+                Description = model.Description,
+                Cost = model.Cost,
+                Date = model.Date
+            };
 
-                db.RepairExpenses.Add(repair);
+            db.RepairExpenses.Add(repair);
+            db.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
+        public IActionResult Edit(int id)
+        {
+            var item = db.RepairExpenses.Find(id);
+            if (item == null) return NotFound();
+
+            var model = new RepairExpenseViewModel
+            {
+                Id = item.Id,
+                CarId = item.CarId,
+                Description = item.Description,
+                Cost = item.Cost,
+                Date = item.Date
+            };
+
+            ViewBag.Cars = db.Cars.ToList();
+            return View(model);
+        }
+        [HttpPost]
+        public IActionResult Edit(RepairExpenseViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var item = db.RepairExpenses.Find(model.Id);
+                if (item == null) return NotFound();
+
+                item.CarId = model.CarId;
+                item.Description = model.Description;
+                item.Cost = model.Cost;
+                item.Date = model.Date;
+
                 db.SaveChanges();
-
                 return RedirectToAction("Index");
+            }
+
+            ViewBag.Cars = db.Cars.ToList();
+            return View(model);
+        }
+        public IActionResult Delete(int id)
+        {
+            var item = db.RepairExpenses.Include(r => r.Car).FirstOrDefault(r => r.Id == id);
+            if (item == null) return NotFound();
+
+            var model = new RepairExpenseViewModel
+            {
+                Id = item.Id,
+                CarId = item.CarId,
+                Description = item.Description,
+                Cost = item.Cost,
+                Date = item.Date
+            };
+
+            return View(model);
+        }
+        [HttpPost, ActionName("Delete")]
+        public IActionResult DeleteConfirmed(int id)
+        {
+            var item = db.RepairExpenses.Find(id);
+            if (item == null) return NotFound();
+
+            db.RepairExpenses.Remove(item);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        public IActionResult Details(int id)
+        {
+            var item = db.RepairExpenses.Include(r => r.Car).FirstOrDefault(r => r.Id == id);
+            if (item == null) return NotFound();
+            var model = new RepairExpenseViewModel
+            {
+                Id = item.Id,
+                CarId = item.CarId,
+                Description = item.Description,
+                Cost = item.Cost,
+                Date = item.Date
+            };
+            return View(model);
         }
     }
 }
