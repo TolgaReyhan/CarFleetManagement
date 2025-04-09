@@ -1,0 +1,20 @@
+﻿@model FuelExpenseViewModel
+@{
+    ViewData["Title"] = "Изтриване на разход за гориво";
+}
+<div class="container mt-4">
+    <h4>Сигурни ли сте, че искате да изтриете този запис?</h4>
+    <dl class="row">
+        <dt class="col-sm-3">Дата</dt>
+        <dd class="col-sm-9">@Model.Date.ToShortDateString()</dd>
+        <dt class="col-sm-3">Литри</dt>
+        <dd class="col-sm-9">@Model.Liters</dd>
+        <dt class="col-sm-3">Стойност</dt>
+        <dd class="col-sm-9">@Model.Amount</dd>
+    </dl>
+    <form asp-action="DeletePost" method="post">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Изтрий</button>
+        <a asp-action="Index" class="btn btn-secondary">Отказ</a>
+    </form>
+</div>

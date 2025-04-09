@@ -1,0 +1,49 @@
+﻿@model MonthlyReportViewModel
+@{
+    Dictionary<int, string> carData = ViewData["car-info"] as Dictionary<int, string>;
+}
+<div class="container mt-4">
+    <h2 class="mb-3">Добавяне на месечна справка</h2>
+    <form asp-action="Add" method="post" class="border p-4 rounded shadow bg-light">
+        <div class="mb-3">
+            <label class="form-label" style="color:black">Автомобил:</label>
+            <select asp-for="CarId" class="form-control">
+                <option value="">Изберете кола</option>
+                @foreach (var car in carData)
+                {
+                    <option value="@car.Key">@car.Value</option>
+                }
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" style="color:black">Изразходвано гориво (литри):</label>
+            <input asp-for="FuelLiters" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label" style="color:black">Разход за гориво (лв.):</label>
+            <input asp-for="FuelCost" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label" style="color:black">Изминати километри:</label>
+            <input asp-for="TotalKilometers" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label" style="color:black">Брой ремонти:</label>
+            <input asp-for="TotalRepairs" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label" style="color:black">Разходи за ремонти (лв.):</label>
+            <input asp-for="RepairCost" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label" style="color:black">Разход за застраховки (лв.):</label>
+            <input asp-for="InsuranceCount" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label" style="color:black">Дата:</label>
+            <input asp-for="Date" type="date" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-success">Добави</button>
+        <a href="@Url.Action("Index")" class="btn btn-secondary">Назад</a>
+    </form>
+</div>
