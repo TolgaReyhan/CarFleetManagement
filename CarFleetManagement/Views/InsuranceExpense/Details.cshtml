@@ -1,0 +1,15 @@
+﻿@model InsuranceExpenseViewModel
+@{
+    ViewData["Title"] = "Детайли за застраховка";
+}
+<div class="container mt-4">
+    <dl class="row">
+        <dt class="col-sm-3">Автомобил</dt>
+        <dd class="col-sm-9">@Model.CarId</dd>
+        <dt class="col-sm-3">Компания</dt>
+        <dd class="col-sm-9">@Model.Provider</dd>
+        <dt class="col-sm-3">Стойност</dt>
+        <dd class="col-sm-9">@Model.Amount</dd>
+    </dl>
+    <a asp-action="Index" class="btn btn-primary">Назад</a>
+</div>
