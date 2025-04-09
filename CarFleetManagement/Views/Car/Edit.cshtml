@@ -1,0 +1,27 @@
+﻿@model CarViewModel
+@{
+    ViewData["Title"] = "Редактиране на автомобил";
+}
+<div class="container mt-4">
+    <h2>@ViewData["Title"]</h2>
+    <form asp-action="Edit"  method="post">
+        <input type="hidden" asp-for="Id" />
+        <div class="form-group">
+            <label asp-for="CarModel"></label>
+            <input asp-for="CarModel" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="RegistrationNumber"></label>
+            <input asp-for="RegistrationNumber" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="PurchaseDate"></label>
+            <input asp-for="PurchaseDate" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Mileage"></label>
+            <input asp-for="Mileage" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">Запази</button>
+    </form>
+</div>

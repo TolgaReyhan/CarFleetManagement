@@ -1,0 +1,40 @@
+﻿@model List<MonthlyReportViewModel>
+
+<div class="container mt-4">
+    <h2 class="mb-3">Месечни справки</h2>
+    <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Автомобил</th>
+                <th>Гориво (л)</th>
+                <th>Гориво (цена)</th>
+                <th>Изминати км</th>
+                <th>Ремонти (брой)</th>
+                <th>Ремонти (цена)</th>
+                <th>Застраховки</th>
+                <th>Дата</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var report in Model)
+            {
+                <tr>
+                    <td>@report.CarId</td>
+                    <td>@report.FuelLiters</td>
+                    <td>@report.FuelCost</td>
+                    <td>@report.TotalKilometers</td>
+                    <td>@report.TotalRepairs</td>
+                    <td>@report.RepairCost</td>
+                    <td>@report.InsuranceCount</td>
+                    <td>@report.Date</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@report.Id" class="btn btn-warning btn-sm" style="color: white">Редактирай</a>
+                        <a asp-action="Details" asp-route-id="@report.Id" class="btn btn-info btn-sm" style="color: white">Детайли</a>
+                        <a asp-action="Delete" asp-route-id="@report.Id" class="btn btn-danger btn-sm" style="color: white">Изтрий</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a href="@Url.Action("Add")" class="btn btn-primary">Добави справка</a>
+</div>
