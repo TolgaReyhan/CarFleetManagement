@@ -3,12 +3,14 @@ using CarFleetManagement.Data;
 using CarFleetManagement.Data.Models;
 using CarFleetManagement.Models;
 using CarFleetManagement.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace CarFleetManagement.Controllers
 {
+    [Authorize]
     public class RepairExpenseController : Controller
     {
         private readonly ApplicationDbContext db;

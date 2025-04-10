@@ -5,9 +5,11 @@ using Microsoft.AspNetCore.Mvc;
 using CarFleetManagement.Contracts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CarFleetManagement.Controllers
 {
+    [Authorize]
     public class FuelExpenseController : Controller
     {
         private readonly ApplicationDbContext db;
