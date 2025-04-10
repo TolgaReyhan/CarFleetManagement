@@ -1,14 +1,15 @@
-using CarFleetManagement.Contracts;
+﻿using CarFleetManagement.Contracts;
 using CarFleetManagement.Data;
 using CarFleetManagement.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using static System.Formats.Asn1.AsnWriter;
 
 namespace CarFleetManagement
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args) // Changed Main to async Task
         {
             var builder = WebApplication.CreateBuilder(args);
 
@@ -20,11 +21,41 @@ namespace CarFleetManagement
             builder.Services.AddRazorPages()
                 .AddRazorRuntimeCompilation();
             builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+    .AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<ApplicationDbContext>();
             builder.Services.AddControllersWithViews();
-            builder.Services.AddTransient<ICarService,CarService> ();
+            builder.Services.AddTransient<ICarService, CarService>();
+
             var app = builder.Build();
-            
+
+            using (var scope = app.Services.CreateScope()) // Fixed scope initialization
+            {
+                var serviceProvider = scope.ServiceProvider;
+
+                var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+                var userManager = serviceProvider.GetRequiredService<UserManager<IdentityUser>>();
+
+                string[] roles = { "Admin", "User" };
+                foreach (var role in roles)
+                {
+                    if (!await roleManager.RoleExistsAsync(role))
+                    {
+                        await roleManager.CreateAsync(new IdentityRole(role));
+                    }
+                }
+
+                string adminEmail = "admin@admin.com";
+                string adminPassword = "Admin123!";
+
+                var adminUser = await userManager.FindByEmailAsync(adminEmail);
+                if (adminUser == null)
+                {
+                    adminUser = new IdentityUser { UserName = adminEmail, Email = adminEmail, EmailConfirmed = true };
+                    await userManager.CreateAsync(adminUser, adminPassword);
+                    await userManager.AddToRoleAsync(adminUser, "Admin");
+                }
+            }
+
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
@@ -33,7 +64,6 @@ namespace CarFleetManagement
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
@@ -42,6 +72,7 @@ namespace CarFleetManagement
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllerRoute(

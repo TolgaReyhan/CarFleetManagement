@@ -5,7 +5,7 @@ namespace CarFleetManagement.Models
     public class CarViewModel
     {
         public int Id { get; set; }
-        public string Model { get; set; }
+        public string CarModel { get; set; }
         [Display(Name = "Регистрационен номер")]
         public string RegistrationNumber { get; set; }
         [Display(Name = "Дата на закупуване")]

@@ -4,9 +4,12 @@ using CarFleetManagement.Models;
 using Microsoft.AspNetCore.Mvc;
 using CarFleetManagement.Contracts;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CarFleetManagement.Controllers
 {
+    [Authorize]
     public class MonthlyReportController : Controller
     {
         private readonly ApplicationDbContext db;
@@ -82,7 +85,13 @@ namespace CarFleetManagement.Controllers
                 Date = report.Date
             };
 
-            ViewBag.Cars = db.Cars.ToList();
+            ViewBag.Cars = db.Cars
+    .Select(c => new SelectListItem
+    {
+        Value = c.Id.ToString(),
+        Text = $"{c.Model} ({c.RegistrationNumber})"
+    })
+    .ToList();
             return View(model);
         }
         [HttpPost]
@@ -105,7 +114,13 @@ namespace CarFleetManagement.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.Cars = db.Cars.ToList();
+            ViewBag.Cars = db.Cars
+    .Select(c => new SelectListItem
+    {
+        Value = c.Id.ToString(),
+        Text = $"{c.Model} ({c.RegistrationNumber})"
+    })
+    .ToList();
             return View(model);
         }
         public IActionResult Delete(int id)
@@ -128,8 +143,8 @@ namespace CarFleetManagement.Controllers
 
             return View(model);
         }
-        [HttpPost, ActionName("Delete")]
-        public IActionResult DeleteConfirmed(int id)
+        [HttpPost]
+        public IActionResult DeletePost(int id)
         {
             var report = db.MonthlyReports.Find(id);
             if (report == null) return NotFound();

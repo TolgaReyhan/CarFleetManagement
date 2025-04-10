@@ -4,6 +4,7 @@ using CarFleetManagement.Data.Models;
 using CarFleetManagement.Models;
 using CarFleetManagement.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace CarFleetManagement.Controllers
@@ -71,7 +72,13 @@ namespace CarFleetManagement.Controllers
                 Date = item.Date
             };
 
-            ViewBag.Cars = db.Cars.ToList();
+            ViewBag.Cars = db.Cars
+    .Select(c => new SelectListItem
+    {
+        Value = c.Id.ToString(),
+        Text = $"{c.Model} ({c.RegistrationNumber})"
+    })
+    .ToList();
             return View(model);
         }
         [HttpPost]
@@ -91,7 +98,13 @@ namespace CarFleetManagement.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.Cars = db.Cars.ToList();
+            ViewBag.Cars = db.Cars
+    .Select(c => new SelectListItem
+    {
+        Value = c.Id.ToString(),
+        Text = $"{c.Model} ({c.RegistrationNumber})"
+    })
+    .ToList();
             return View(model);
         }
         public IActionResult Delete(int id)
@@ -110,8 +123,8 @@ namespace CarFleetManagement.Controllers
 
             return View(model);
         }
-        [HttpPost, ActionName("Delete")]
-        public IActionResult DeleteConfirmed(int id)
+        [HttpPost]
+        public IActionResult DeletePost(int id)
         {
             var item = db.RepairExpenses.Find(id);
             if (item == null) return NotFound();

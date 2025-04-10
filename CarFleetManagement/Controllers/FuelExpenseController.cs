@@ -93,12 +93,18 @@ namespace CarFleetManagement.Controllers
                 fuel.Liters = model.Liters;
                 fuel.Amount = model.Amount;
                 fuel.Date = model.Date;
-
+                db.FuelExpenses.Update(fuel);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.Cars = db.Cars.ToList();
+            ViewBag.Cars = db.Cars
+     .Select(c => new SelectListItem
+     {
+         Value = c.Id.ToString(),
+         Text = $"{c.Model} ({c.RegistrationNumber})"
+     })
+     .ToList();
             return View(model);
         }
         public IActionResult Delete(int id)
@@ -117,8 +123,8 @@ namespace CarFleetManagement.Controllers
 
             return View(model);
         }
-        [HttpPost, ActionName("Delete")]
-        public IActionResult DeleteConfirmed(int id)
+        [HttpPost]
+        public IActionResult DeletePost(int id)
         {
             var fuel = db.FuelExpenses.Find(id);
             if (fuel == null) return NotFound();

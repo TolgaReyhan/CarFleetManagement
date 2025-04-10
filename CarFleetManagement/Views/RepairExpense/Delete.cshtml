@@ -10,7 +10,7 @@
         <dt class="col-sm-3">Цена</dt>
         <dd class="col-sm-9">@Model.Cost</dd>
     </dl>
-    <form asp-action="DeleteConfirmed" method="post">
+    <form asp-action="DeletePost" method="post">
         <input type="hidden" asp-for="Id" />
         <button type="submit" class="btn btn-danger">Изтрий</button>
         <a asp-action="Index" class="btn btn-secondary">Отказ</a>

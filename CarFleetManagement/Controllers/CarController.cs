@@ -2,9 +2,11 @@
 using CarFleetManagement.Data;
 using CarFleetManagement.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CarFleetManagement.Controllers
 {
+    [Authorize]
     public class CarController : Controller
     {
         private readonly ApplicationDbContext db;
@@ -20,7 +22,7 @@ namespace CarFleetManagement.Controllers
                 .Select(c => new CarViewModel
                 {
                     Id = c.Id,
-                    Model = c.Model,
+                    CarModel = c.Model,
                     RegistrationNumber = c.RegistrationNumber,
                     PurchaseDate = c.PurchaseDate,
                     Mileage = c.Mileage
@@ -40,7 +42,7 @@ namespace CarFleetManagement.Controllers
             
             var car = new Car
             {
-                Model = input.Model,
+                Model = input.CarModel,
                 RegistrationNumber = input.RegistrationNumber,
                 PurchaseDate = input.PurchaseDate,
                 Mileage = input.Mileage
@@ -59,9 +61,10 @@ namespace CarFleetManagement.Controllers
             var model = new CarViewModel
             {
                 Id = car.Id,
-                Model = car.Model,
+                CarModel = car.Model,
                 RegistrationNumber = car.RegistrationNumber,
-                PurchaseDate = car.PurchaseDate
+                PurchaseDate = car.PurchaseDate,
+                Mileage= car.Mileage
             };
 
             return View(model);
@@ -74,9 +77,10 @@ namespace CarFleetManagement.Controllers
                 var car = db.Cars.FirstOrDefault(c => c.Id == model.Id);
                 if (car == null) return NotFound();
 
-                car.Model = model.Model;
+                car.Model = model.CarModel;
                 car.RegistrationNumber = model.RegistrationNumber;
                 car.PurchaseDate = model.PurchaseDate;
+                car.Mileage = model.Mileage;
 
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -92,15 +96,16 @@ namespace CarFleetManagement.Controllers
             var model = new CarViewModel
             {
                 Id = car.Id,
-                Model = car.Model,
+                CarModel = car.Model,
                 RegistrationNumber = car.RegistrationNumber,
-                PurchaseDate = car.PurchaseDate
+                PurchaseDate = car.PurchaseDate,
+                Mileage= car.Mileage
             };
 
             return View(model);
         }
-        [HttpPost, ActionName("Delete")]
-        public IActionResult DeleteConfirmed(int id)
+        [HttpPost]
+        public IActionResult DeletePost(int id)
         {
             var car = db.Cars.Find(id);
             if (car == null) return NotFound();
@@ -118,9 +123,10 @@ namespace CarFleetManagement.Controllers
             var model = new CarViewModel
             {
                 Id = car.Id,
-                Model = car.Model,
+                CarModel = car.Model,
                 RegistrationNumber = car.RegistrationNumber,
                 PurchaseDate = car.PurchaseDate,
+                Mileage = car.Mileage
             };
 
             return View(model);
