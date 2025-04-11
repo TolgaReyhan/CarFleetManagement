@@ -3,6 +3,7 @@ using CarFleetManagement.Data;
 using CarFleetManagement.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace CarFleetManagement.Controllers
 {
@@ -18,7 +19,9 @@ namespace CarFleetManagement.Controllers
 
         public IActionResult Index()
         {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var cars = db.Cars
+                .Where(c => c.UserId == userId)
                 .Select(c => new CarViewModel
                 {
                     Id = c.Id,
@@ -37,19 +40,23 @@ namespace CarFleetManagement.Controllers
         }
 
         [HttpPost]
-        public IActionResult Add(CarViewModel input)
+        public async Task<IActionResult> Add(CarViewModel model)
         {
-            
+            if (!ModelState.IsValid)
+                return View(model);
+
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // текущият потребител
             var car = new Car
             {
-                Model = input.CarModel,
-                RegistrationNumber = input.RegistrationNumber,
-                PurchaseDate = input.PurchaseDate,
-                Mileage = input.Mileage
+                Model = model.CarModel,
+                RegistrationNumber = model.RegistrationNumber,
+                PurchaseDate = model.PurchaseDate,
+                Mileage = model.Mileage,
+                UserId = userId
             };
 
             db.Cars.Add(car);
-            db.SaveChanges();
+            await db.SaveChangesAsync();
 
             return RedirectToAction("Index");
         }

@@ -5,10 +5,14 @@
 <div class="container mt-4">
     <h4>Сигурни ли сте, че искате да изтриете тази застраховка?</h4>
     <dl class="row">
+        <dt class="col-sm-3">Автомобил</dt>
+        <dd class="col-sm-9">@Model.CarDisplayName</dd>
         <dt class="col-sm-3">Компания</dt>
         <dd class="col-sm-9">@Model.Provider</dd>
         <dt class="col-sm-3">Стойност</dt>
         <dd class="col-sm-9">@Model.Amount</dd>
+        <dt class="col-sm-3">Закупване</dt>
+        <dd class="col-sm-9">@Model.StartDate</dd>
         <dt class="col-sm-3">Валидност</dt>
         <dd class="col-sm-9">@Model.EndDate</dd>
     </dl>

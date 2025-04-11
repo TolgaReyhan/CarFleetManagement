@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CarFleetManagement.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250410145658_InicialCreate")]
+    [Migration("20250411143850_InicialCreate")]
     partial class InicialCreate
     {
         /// <inheritdoc />
@@ -47,7 +47,13 @@ namespace CarFleetManagement.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Cars");
                 });
@@ -377,6 +383,17 @@ namespace CarFleetManagement.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("CarFleetManagement.Data.Models.Car", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("CarFleetManagement.Data.Models.FuelExpense", b =>

@@ -2,14 +2,20 @@
 {
     public class MonthlyReportViewModel
     {
-        public int Id { get; set; }
-        public DateTime Date { get; set; }
-        public int CarId { get; set; }
-        public decimal FuelLiters { get; set; }
-        public decimal FuelCost { get; set; }
-        public int TotalKilometers { get; set; }
-        public int TotalRepairs { get; set; }
-        public decimal RepairCost { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime EndDate { get; set; }
+
+        public string CarModel { get; set; }
+
+        public double TotalFuelLiters { get; set; }
+        public decimal TotalFuelAmount { get; set; }
+
+
+        public int RepairCount { get; set; }
+        public decimal TotalRepairCost { get; set; }
+
         public int InsuranceCount { get; set; }
+        public decimal TotalInsuranceCost { get; set; }
+        public string CarDisplayName { get; set; }
     }
 }

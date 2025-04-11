@@ -6,6 +6,7 @@ using CarFleetManagement.Contracts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace CarFleetManagement.Controllers
 {
@@ -23,11 +24,16 @@ namespace CarFleetManagement.Controllers
 
         public IActionResult Index()
         {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
             var expenses = db.FuelExpenses
+                .Where(e => e.Car.UserId == userId)
+                .Include(e => e.Car)
                 .Select(e => new FuelExpenseViewModel
                 {
                     Id = e.Id,
                     CarId = e.CarId,
+                    CarDisplayName = e.Car.Model + " (" + e.Car.RegistrationNumber + ")",
                     Liters = e.Liters,
                     Amount = e.Amount,
                     Date = e.Date
@@ -118,6 +124,7 @@ namespace CarFleetManagement.Controllers
             {
                 Id = fuel.Id,
                 CarId = fuel.CarId,
+                CarDisplayName = fuel.Car.Model + " (" + fuel.Car.RegistrationNumber + ")",
                 Liters = fuel.Liters,
                 Amount = fuel.Amount,
                 Date = fuel.Date
@@ -144,6 +151,7 @@ namespace CarFleetManagement.Controllers
             {
                 Id = fuel.Id,
                 CarId = fuel.CarId,
+                CarDisplayName = fuel.Car.Model + " (" + fuel.Car.RegistrationNumber + ")",
                 Liters = fuel.Liters,
                 Amount = fuel.Amount,
                 Date = fuel.Date

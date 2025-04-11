@@ -6,6 +6,7 @@ using CarFleetManagement.Contracts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace CarFleetManagement.Controllers
 {
@@ -13,163 +14,57 @@ namespace CarFleetManagement.Controllers
     public class MonthlyReportController : Controller
     {
         private readonly ApplicationDbContext db;
-        private readonly ICarService carService;
 
-        public MonthlyReportController(ApplicationDbContext db, ICarService carService)
+        public MonthlyReportController(ApplicationDbContext context)
         {
-            this.db = db;
-            this.carService = carService;
+            db = context;
         }
 
         public IActionResult Index()
         {
-            var reports = db.MonthlyReports
-                .Select(r => new MonthlyReportViewModel
-                {
-                    Id = r.Id,
-                    CarId = r.CarId,
-                    FuelLiters = r.FuelLiters,
-                    FuelCost = r.FuelCost,
-                    TotalKilometers = r.TotalKilometers,
-                    TotalRepairs = r.TotalRepairs,
-                    RepairCost = r.RepairCost,
-                    InsuranceCount = r.InsuranceCount,
-                    Date = r.Date
-                }).ToList();
-
-            return View(reports);
-        }
-
-        public IActionResult Add()
-        {
-            Dictionary<int, string> carIdNames = carService.GetCarNamesAndIds();
-            ViewData["car-info"] = carIdNames;
             return View();
         }
 
         [HttpPost]
-        public IActionResult Add(MonthlyReportViewModel model)
+        public IActionResult Generate(DateTime startDate, DateTime endDate)
         {
-            var report = new MonthlyReport
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            var cars = db.Cars
+                .Where(c => c.UserId == userId)
+                .ToList();
+
+            var reports = cars.Select(car => new MonthlyReportViewModel
             {
-                CarId = model.CarId,
-                FuelLiters = model.FuelLiters,
-                FuelCost = model.FuelCost,
-                TotalKilometers = model.TotalKilometers,
-                TotalRepairs = model.TotalRepairs,
-                RepairCost = model.RepairCost,
-                InsuranceCount = model.InsuranceCount,
-                Date = model.Date
-            };
+                CarModel = $"{car.Model} ({car.RegistrationNumber})",
+                StartDate = startDate,
+                EndDate = endDate,
+                TotalFuelLiters = db.FuelExpenses
+                    .Where(f => f.CarId == car.Id && f.Date >= startDate && f.Date <= endDate)
+                    .Sum(f => (double?)f.Liters) ?? 0,
 
-            db.MonthlyReports.Add(report);
-            db.SaveChanges();
+                TotalFuelAmount = db.FuelExpenses
+                    .Where(f => f.CarId == car.Id && f.Date >= startDate && f.Date <= endDate)
+                    .Sum(f => (decimal?)f.Amount) ?? 0,
 
-            return RedirectToAction("Index");
+                RepairCount = db.RepairExpenses
+                    .Count(r => r.CarId == car.Id && r.Date >= startDate && r.Date <= endDate),
+
+                TotalRepairCost = db.RepairExpenses
+                    .Where(r => r.CarId == car.Id && r.Date >= startDate && r.Date <= endDate)
+                    .Sum(r => (decimal?)r.Cost) ?? 0,
+
+                InsuranceCount = db.InsuranceExpenses
+                    .Count(i => i.CarId == car.Id && i.EndDate >= startDate && i.EndDate <= endDate),
+
+                TotalInsuranceCost = db.InsuranceExpenses
+                    .Where(i => i.CarId == car.Id && i.EndDate >= startDate && i.EndDate <= endDate)
+                    .Sum(i => (decimal?)i.Amount) ?? 0
+
+            }).ToList();
+
+            return View("ReportResult", reports);
         }
-        public IActionResult Edit(int id)
-        {
-            var report = db.MonthlyReports.Find(id);
-            if (report == null) return NotFound();
-
-            var model = new MonthlyReportViewModel
-            {
-                Id = report.Id,
-                CarId = report.CarId,
-                TotalKilometers = report.TotalKilometers,
-                FuelLiters = report.FuelLiters,
-                FuelCost = report.FuelCost,
-                TotalRepairs = report.TotalRepairs,
-                RepairCost = report.RepairCost,
-                InsuranceCount = report.InsuranceCount,
-                Date = report.Date
-            };
-
-            ViewBag.Cars = db.Cars
-    .Select(c => new SelectListItem
-    {
-        Value = c.Id.ToString(),
-        Text = $"{c.Model} ({c.RegistrationNumber})"
-    })
-    .ToList();
-            return View(model);
-        }
-        [HttpPost]
-        public IActionResult Edit(MonthlyReportViewModel model)
-        {
-            if (ModelState.IsValid)
-            {
-                var report = db.MonthlyReports.Find(model.Id);
-                if (report == null) return NotFound();
-
-                report.CarId = model.CarId;
-                report.TotalKilometers = model.TotalKilometers;
-                report.FuelLiters = model.FuelLiters;
-                report.FuelCost = model.FuelCost;
-                report.TotalRepairs = model.TotalRepairs;
-                report.RepairCost = model.RepairCost;
-                report.InsuranceCount = model.InsuranceCount;
-                report.Date = model.Date;
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-
-            ViewBag.Cars = db.Cars
-    .Select(c => new SelectListItem
-    {
-        Value = c.Id.ToString(),
-        Text = $"{c.Model} ({c.RegistrationNumber})"
-    })
-    .ToList();
-            return View(model);
-        }
-        public IActionResult Delete(int id)
-        {
-            var report = db.MonthlyReports.Include(r => r.Car).FirstOrDefault(r => r.Id == id);
-            if (report == null) return NotFound();
-
-            var model = new MonthlyReportViewModel
-            {
-                Id = report.Id,
-                CarId = report.CarId,
-                TotalKilometers = report.TotalKilometers,
-                FuelLiters = report.FuelLiters,
-                FuelCost = report.FuelCost,
-                TotalRepairs = report.TotalRepairs,
-                RepairCost = report.RepairCost,
-                InsuranceCount = report.InsuranceCount,
-                Date = report.Date
-            };
-
-            return View(model);
-        }
-        [HttpPost]
-        public IActionResult DeletePost(int id)
-        {
-            var report = db.MonthlyReports.Find(id);
-            if (report == null) return NotFound();
-
-            db.MonthlyReports.Remove(report);
-            db.SaveChanges();
-            return RedirectToAction("Index");
-        }
-        public IActionResult Details(int id)
-        {
-            var report = db.MonthlyReports.Include(r => r.Car).FirstOrDefault(r => r.Id == id);
-            if (report == null) return NotFound();
-            var model = new MonthlyReportViewModel
-            {
-                Id = report.Id,
-                CarId = report.CarId,
-                TotalKilometers = report.TotalKilometers,
-                FuelLiters = report.FuelLiters,
-                FuelCost = report.FuelCost,
-                TotalRepairs = report.TotalRepairs,
-                RepairCost = report.RepairCost,
-                InsuranceCount = report.InsuranceCount,
-                Date = report.Date
-            };
-            return View(model);
-        }
+            private readonly ICarService carService;
     }
 }

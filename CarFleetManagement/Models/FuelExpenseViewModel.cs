@@ -6,6 +6,7 @@ namespace CarFleetManagement.Models
     {
         public int Id { get; set; }
         public int CarId { get; set; }
+        public string CarDisplayName { get; set; }
         public DateTime Date { get; set; }
         public decimal Liters { get; set; }
         public decimal Amount { get; set; }

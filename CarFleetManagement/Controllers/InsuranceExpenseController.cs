@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 namespace CarFleetManagement.Controllers
 {
@@ -24,13 +25,19 @@ namespace CarFleetManagement.Controllers
 
         public IActionResult Index()
         {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
             var insurances = db.InsuranceExpenses
+                .Where(i => i.Car.UserId == userId)
+                .Include(i => i.Car)
                 .Select(i => new InsuranceExpenseViewModel
                 {
                     Id = i.Id,
                     CarId = i.CarId,
+                    CarDisplayName = i.Car.Model + " (" + i.Car.RegistrationNumber + ")",
                     Provider = i.Provider,
                     Amount = i.Amount,
+                    StartDate = i.StartDate,
                     EndDate = i.EndDate
                 }).ToList();
 
@@ -52,6 +59,7 @@ namespace CarFleetManagement.Controllers
                 CarId = model.CarId,
                 Provider = model.Provider,
                 Amount = model.Amount,
+                StartDate = model.StartDate,
                 EndDate = model.EndDate
             };
 
@@ -71,6 +79,7 @@ namespace CarFleetManagement.Controllers
                 CarId = item.CarId,
                 Provider = item.Provider,
                 Amount = item.Amount,
+                StartDate = item.StartDate,
                 EndDate = item.EndDate
             };
 
@@ -94,6 +103,7 @@ namespace CarFleetManagement.Controllers
                 item.CarId = model.CarId;
                 item.Provider = model.Provider;
                 item.Amount = model.Amount;
+                item.StartDate = model.StartDate;
                 item.EndDate = model.EndDate;
 
                 db.SaveChanges();
@@ -118,8 +128,10 @@ namespace CarFleetManagement.Controllers
             {
                 Id = item.Id,
                 CarId = item.CarId,
+                CarDisplayName = item.Car.Model + " (" + item.Car.RegistrationNumber + ")",
                 Provider = item.Provider,
                 Amount = item.Amount,
+                StartDate = item.StartDate,
                 EndDate = item.EndDate
             };
 
@@ -143,8 +155,10 @@ namespace CarFleetManagement.Controllers
             {
                 Id = item.Id,
                 CarId = item.CarId,
+                CarDisplayName = item.Car.Model + " (" + item.Car.RegistrationNumber + ")",
                 Provider = item.Provider,
                 Amount = item.Amount,
+                StartDate = item.StartDate,
                 EndDate = item.EndDate
             };
             return View(model);

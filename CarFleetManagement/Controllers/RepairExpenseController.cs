@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 namespace CarFleetManagement.Controllers
 {
@@ -24,11 +25,16 @@ namespace CarFleetManagement.Controllers
 
         public IActionResult Index()
         {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
             var repairs = db.RepairExpenses
+                .Where(r => r.Car.UserId == userId)
+                .Include(r => r.Car)
                 .Select(r => new RepairExpenseViewModel
                 {
                     Id = r.Id,
                     CarId = r.CarId,
+                    CarDisplayName = r.Car.Model + " (" + r.Car.RegistrationNumber + ")",
                     Description = r.Description,
                     Cost = r.Cost,
                     Date = r.Date
@@ -118,6 +124,7 @@ namespace CarFleetManagement.Controllers
             {
                 Id = item.Id,
                 CarId = item.CarId,
+                CarDisplayName = item.Car.Model + " (" + item.Car.RegistrationNumber + ")",
                 Description = item.Description,
                 Cost = item.Cost,
                 Date = item.Date
@@ -143,6 +150,7 @@ namespace CarFleetManagement.Controllers
             {
                 Id = item.Id,
                 CarId = item.CarId,
+                CarDisplayName = item.Car.Model + " (" + item.Car.RegistrationNumber + ")",
                 Description = item.Description,
                 Cost = item.Cost,
                 Date = item.Date

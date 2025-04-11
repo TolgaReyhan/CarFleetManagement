@@ -92,24 +92,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdXJhbmNlRXhwZW5zZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual studio/VS programs/CarFleetManagement/CarFleetManagement/Views/MonthlyReport/Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9udGhseVJlcG9ydFxBZGQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Visual studio/VS programs/CarFleetManagement/CarFleetManagement/Views/MonthlyReport/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9udGhseVJlcG9ydFxEZWxldGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Visual studio/VS programs/CarFleetManagement/CarFleetManagement/Views/MonthlyReport/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9udGhseVJlcG9ydFxEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Visual studio/VS programs/CarFleetManagement/CarFleetManagement/Views/MonthlyReport/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9udGhseVJlcG9ydFxFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/Visual studio/VS programs/CarFleetManagement/CarFleetManagement/Views/MonthlyReport/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9udGhseVJlcG9ydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual studio/VS programs/CarFleetManagement/CarFleetManagement/Views/MonthlyReport/ReportResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9udGhseVJlcG9ydFxSZXBvcnRSZXN1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Visual studio/VS programs/CarFleetManagement/CarFleetManagement/Views/RepairExpense/Add.cshtml]

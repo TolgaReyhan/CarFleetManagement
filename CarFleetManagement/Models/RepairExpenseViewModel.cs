@@ -9,5 +9,6 @@ namespace CarFleetManagement.Models
         public DateTime Date { get; set; }
         public string Description { get; set; }
         public decimal Cost { get; set; }
+        public string CarDisplayName { get; set; }
     }
 }
