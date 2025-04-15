@@ -1,0 +1,37 @@
+﻿@model InsuranceExpenseViewModel
+@{
+    Dictionary<int, string> carData = ViewData["car-info"] as Dictionary<int, string>;
+}
+<div class="container mt-4">
+    <h2 class="mb-3">Добавяне на застраховка</h2>
+    <form asp-action="Add" method="post" class="border p-4 rounded shadow bg-light">
+        <div class="mb-3">
+            <label class="form-label" style="color:black">Автомобил:</label>
+            <select asp-for="CarId" class="form-control">
+                <option value="">Изберете кола</option>
+                @foreach (var car in carData)
+                {
+                    <option value="@car.Key">@car.Value</option>
+                }
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" style="color:black">Компания:</label>
+            <input asp-for="Provider" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label" style="color:black">Цена:</label>
+            <input asp-for="Amount" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label" style="color:black">Закупване:</label>
+            <input asp-for="StartDate" type="date" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label" style="color:black">Валидност:</label>
+            <input asp-for="EndDate" type="date" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-success">Добави</button>
+        <a href="@Url.Action("Index")" class="btn btn-secondary">Назад</a>
+    </form>
+</div>

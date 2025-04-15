@@ -1,0 +1,142 @@
+﻿using CarFleetManagement.Data.Models;
+using CarFleetManagement.Data;
+using CarFleetManagement.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
+
+namespace CarFleetManagement.Controllers
+{
+    [Authorize]
+    public class CarController : Controller
+    {
+        private readonly ApplicationDbContext db;
+
+        public CarController(ApplicationDbContext db)
+        {
+            this.db = db;
+        }
+
+        public IActionResult Index()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var cars = db.Cars
+                .Where(c => c.UserId == userId)
+                .Select(c => new CarViewModel
+                {
+                    Id = c.Id,
+                    CarModel = c.Model,
+                    RegistrationNumber = c.RegistrationNumber,
+                    PurchaseDate = c.PurchaseDate,
+                    Mileage = c.Mileage
+                }).ToList();
+
+            return View(cars);
+        }
+
+        public IActionResult Add()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Add(CarViewModel model)
+        {
+            if (!ModelState.IsValid)
+                return View(model);
+
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // текущият потребител
+            var car = new Car
+            {
+                Model = model.CarModel,
+                RegistrationNumber = model.RegistrationNumber,
+                PurchaseDate = model.PurchaseDate,
+                Mileage = model.Mileage,
+                UserId = userId
+            };
+
+            db.Cars.Add(car);
+            await db.SaveChangesAsync();
+
+            return RedirectToAction("Index");
+        }
+        public IActionResult Edit(int id)
+        {
+            var car = db.Cars.FirstOrDefault(c => c.Id == id);
+            if (car == null) return NotFound();
+
+            var model = new CarViewModel
+            {
+                Id = car.Id,
+                CarModel = car.Model,
+                RegistrationNumber = car.RegistrationNumber,
+                PurchaseDate = car.PurchaseDate,
+                Mileage= car.Mileage
+            };
+
+            return View(model);
+        }
+        [HttpPost]
+        public IActionResult Edit(CarViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var car = db.Cars.FirstOrDefault(c => c.Id == model.Id);
+                if (car == null) return NotFound();
+
+                car.Model = model.CarModel;
+                car.RegistrationNumber = model.RegistrationNumber;
+                car.PurchaseDate = model.PurchaseDate;
+                car.Mileage = model.Mileage;
+
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+
+            return View(model);
+        }
+        public IActionResult Delete(int id)
+        {
+            var car = db.Cars.Find(id);
+            if (car == null) return NotFound();
+
+            var model = new CarViewModel
+            {
+                Id = car.Id,
+                CarModel = car.Model,
+                RegistrationNumber = car.RegistrationNumber,
+                PurchaseDate = car.PurchaseDate,
+                Mileage= car.Mileage
+            };
+
+            return View(model);
+        }
+        [HttpPost]
+        public IActionResult DeletePost(int id)
+        {
+            var car = db.Cars.Find(id);
+            if (car == null) return NotFound();
+
+            db.Cars.Remove(car);
+            db.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
+        public IActionResult Details(int id)
+        {
+            var car = db.Cars.Find(id);
+            if (car == null) return NotFound();
+
+            var model = new CarViewModel
+            {
+                Id = car.Id,
+                CarModel = car.Model,
+                RegistrationNumber = car.RegistrationNumber,
+                PurchaseDate = car.PurchaseDate,
+                Mileage = car.Mileage
+            };
+
+            return View(model);
+        }
+    }
+}

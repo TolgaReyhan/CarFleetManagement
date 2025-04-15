@@ -1,0 +1,36 @@
+﻿@model List<MonthlyReportViewModel>
+@{
+    ViewData["Title"] = "Резултати от отчета";
+}
+
+<div class="container mt-4">
+    <h2>Месечен отчет</h2>
+
+    <table class="table table-bordered table-striped mt-3">
+        <thead class="table-dark">
+            <tr>
+                <th>Автомобил</th>
+                <th>Гориво (литри)</th>
+                <th>Гориво (стойност)</th>
+                <th>Ремонти (брой)</th>
+                <th>Ремонти (стойност)</th>
+                <th>Застраховки (брой)</th>
+                <th>Застраховки (стойност)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var report in Model)
+            {
+                    <tr>
+                        <td>@report.CarModel</td>
+                        <td>@report.TotalFuelLiters</td>
+                        <td>@report.TotalFuelAmount</td>
+                        <td>@report.RepairCount</td>
+                        <td>@report.TotalRepairCost</td>
+                        <td>@report.InsuranceCount</td>
+                        <td>@report.TotalInsuranceCost</td>
+                    </tr>
+            }
+        </tbody>
+    </table>
+</div>

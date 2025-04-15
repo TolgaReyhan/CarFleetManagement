@@ -1,0 +1,36 @@
+﻿@model List<InsuranceExpenseViewModel>
+
+<div class="container mt-4">
+    <h2 class="mb-3">Застраховки</h2>
+    <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Номер</th>
+                <th>Автомобил</th>
+                <th>Компания</th>
+                <th>Цена</th>
+                <th>Закупване</th>
+                <th>Валидност</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var insurance in Model)
+            {
+                <tr>
+                    <td>@insurance.CarId</td>
+                    <td>@insurance.CarDisplayName</td>
+                    <td>@insurance.Provider</td>
+                    <td>@insurance.Amount</td>
+                    <td>@insurance.StartDate.ToShortDateString()</td>
+                    <td>@insurance.EndDate.ToShortDateString()</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@insurance.Id" class="btn btn-warning btn-sm" style="color: white">Редактирай</a>
+                        <a asp-action="Details" asp-route-id="@insurance.Id" class="btn btn-info btn-sm" style="color: white">Детайли</a>
+                        <a asp-action="Delete" asp-route-id="@insurance.Id" class="btn btn-danger btn-sm" style="color: white">Изтрий</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a href="@Url.Action("Add")" class="btn btn-primary">Добави застраховка</a>
+</div>

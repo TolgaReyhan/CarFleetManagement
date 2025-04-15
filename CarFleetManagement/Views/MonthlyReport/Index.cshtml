@@ -1,0 +1,22 @@
+﻿@model MonthlyReportViewModel
+@{
+    ViewData["Title"] = "Месечен отчет";
+}
+
+<div class="container mt-4">
+    <h2>Генерирай месечен отчет</h2>
+
+    <form asp-action="Generate" method="post" class="row g-3">
+        <div class="col-md-5">
+            <label asp-for="StartDate" class="form-label">От дата:</label>
+            <input type="date" name="startDate" class="form-control" required />
+        </div>
+        <div class="col-md-5">
+            <label asp-for="EndDate" class="form-label">До дата:</label>
+            <input type="date" name="endDate" class="form-control" required />
+        </div>
+        <div class="col-md-2 d-flex align-items-end">
+            <button type="submit" class="btn btn-primary w-100">Генерирай</button>
+        </div>
+    </form>
+</div>

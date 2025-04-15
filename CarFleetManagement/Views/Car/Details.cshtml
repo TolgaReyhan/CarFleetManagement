@@ -1,0 +1,21 @@
+﻿@model CarViewModel
+@{
+    ViewData["Title"] = "Детайли за автомобил";
+}
+<div class="container mt-4">
+    <h2>@ViewData["Title"]</h2>
+    <dl class="row">
+        <dt class="col-sm-3">Модел</dt>
+        <dd class="col-sm-9">@Model.CarModel</dd>
+
+        <dt class="col-sm-3">Регистрационен номер</dt>
+        <dd class="col-sm-9">@Model.RegistrationNumber</dd>
+
+        <dt class="col-sm-3">Година на закупване</dt>
+        <dd class="col-sm-9">@Model.PurchaseDate</dd>
+
+        <dt class="col-sm-3">Пробег</dt>
+        <dd class="col-sm-9">@Model.Mileage</dd>
+    </dl>
+    <a asp-action="Index" class="btn btn-primary">Назад</a>
+</div>
