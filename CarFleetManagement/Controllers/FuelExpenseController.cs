@@ -66,6 +66,7 @@ namespace CarFleetManagement.Controllers
 
             return RedirectToAction("Index");
         }
+        [Authorize(Roles = "Admin")]
         public IActionResult Edit(int id)
         {
             var expense = db.FuelExpenses.FirstOrDefault(f => f.Id == id);
@@ -90,6 +91,7 @@ namespace CarFleetManagement.Controllers
             return View(model);
         }
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public IActionResult Edit(FuelExpenseViewModel model)
         {
             if (ModelState.IsValid)
@@ -115,6 +117,7 @@ namespace CarFleetManagement.Controllers
      .ToList();
             return View(model);
         }
+        [Authorize(Roles = "Admin")]
         public IActionResult Delete(int id)
         {
             var fuel = db.FuelExpenses.Include(f => f.Car).FirstOrDefault(f => f.Id == id);
@@ -133,6 +136,7 @@ namespace CarFleetManagement.Controllers
             return View(model);
         }
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public IActionResult DeletePost(int id)
         {
             var fuel = db.FuelExpenses.Find(id);

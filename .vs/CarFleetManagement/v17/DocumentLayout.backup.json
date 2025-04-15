@@ -3,28 +3,132 @@
   "WorkspaceRootPath": "D:\\Visual studio\\VS programs\\CarFleetManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\controllers\\fuelexpensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\controllers\\fuelexpensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\repairexpense\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\repairexpense\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\controllers\\monthlyreportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\controllers\\monthlyreportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\insuranceexpense\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\insuranceexpense\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\models\\monthlyreportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\models\\monthlyreportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\fuelexpense\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\fuelexpense\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\insuranceexpense\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\insuranceexpense\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\car\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\car\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\controllers\\adminpanelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\controllers\\adminpanelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\adminpanel\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\adminpanel\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Migrations\\20250415143227_InicialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CarFleetManagement\\Migrations\\20250415143227_InicialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\data\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\data\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\car\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\car\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\car\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\car\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\models\\carviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\models\\carviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Migrations\\20250415142301_IncialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CarFleetManagement\\Migrations\\20250415142301_IncialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\data\\models\\fuelexpense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\data\\models\\fuelexpense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\controllers\\repairexpensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\controllers\\repairexpensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\controllers\\insuranceexpensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\controllers\\insuranceexpensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\controllers\\fuelexpensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\controllers\\fuelexpensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\repairexpense\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\repairexpense\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\insuranceexpense\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\insuranceexpense\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\fuelexpense\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\fuelexpense\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\car\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\car\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\fuelexpense\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\fuelexpense\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\models\\fuelexpenseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\models\\fuelexpenseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\models\\insuranceexpenseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\models\\insuranceexpenseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\controllers\\monthlyreportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\controllers\\monthlyreportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\insuranceexpense\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\insuranceexpense\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\monthlyreport\\reportresult.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\monthlyreport\\reportresult.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\insuranceexpense\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -35,60 +139,16 @@
       "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\insuranceexpense\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\controllers\\insuranceexpensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\controllers\\insuranceexpensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\models\\insuranceexpenseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\models\\insuranceexpenseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\data\\models\\insuranceexpense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\data\\models\\insuranceexpense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\controllers\\repairexpensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\controllers\\repairexpensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\monthlyreport\\reportresult.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\monthlyreport\\reportresult.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\monthlyreport\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\monthlyreport\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\models\\fuelexpenseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\models\\fuelexpenseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\data\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\data\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\repairexpense\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\repairexpense\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\fuelexpense\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\fuelexpense\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\fuelexpense\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\fuelexpense\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\migrations\\20250411143850_inicialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\migrations\\20250411143850_inicialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\data\\models\\fuelexpense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\data\\models\\fuelexpense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\fuelexpense\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -107,48 +167,8 @@
       "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\models\\repairexpenseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\car\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\car\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\repairexpense\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\repairexpense\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\fuelexpense\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\fuelexpense\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\fuelexpense\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\fuelexpense\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\car\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\car\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\car\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\car\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\repairexpense\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -157,10 +177,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\car\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\car\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\car\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\car\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -183,10 +199,6 @@
       "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\contracts\\icarservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|d:\\visual studio\\vs programs\\carfleetmanagement\\carfleetmanagement\\services\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D713F9B-37C1-45C5-B7E7-ED235B1081A0}|CarFleetManagement\\CarFleetManagement.csproj|solutionrelative:carfleetmanagement\\services\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -198,188 +210,149 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "InsuranceExpenseController.cs",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Controllers\\InsuranceExpenseController.cs",
-              "RelativeDocumentMoniker": "CarFleetManagement\\Controllers\\InsuranceExpenseController.cs",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Controllers\\InsuranceExpenseController.cs",
-              "RelativeToolTip": "CarFleetManagement\\Controllers\\InsuranceExpenseController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAAKAAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T11:52:16.486Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Add.cshtml",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\InsuranceExpense\\Add.cshtml",
-              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\InsuranceExpense\\Add.cshtml",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\InsuranceExpense\\Add.cshtml",
-              "RelativeToolTip": "CarFleetManagement\\Views\\InsuranceExpense\\Add.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB8AAABIAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\AdminPanel\\Index.cshtml",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\AdminPanel\\Index.cshtml",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\AdminPanel\\Index.cshtml",
+              "RelativeToolTip": "CarFleetManagement\\Views\\AdminPanel\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-01T16:25:24.463Z",
+              "WhenOpened": "2025-04-15T14:37:46.986Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\InsuranceExpense\\Delete.cshtml",
-              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\InsuranceExpense\\Delete.cshtml",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\InsuranceExpense\\Delete.cshtml",
-              "RelativeToolTip": "CarFleetManagement\\Views\\InsuranceExpense\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-08T16:01:02.929Z",
+              "Title": "AdminPanelController.cs",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Controllers\\AdminPanelController.cs",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Controllers\\AdminPanelController.cs",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Controllers\\AdminPanelController.cs",
+              "RelativeToolTip": "CarFleetManagement\\Controllers\\AdminPanelController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T14:37:06.957Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\InsuranceExpense\\Details.cshtml",
-              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\InsuranceExpense\\Details.cshtml",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\InsuranceExpense\\Details.cshtml",
-              "RelativeToolTip": "CarFleetManagement\\Views\\InsuranceExpense\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-08T16:01:57.821Z",
+              "DocumentIndex": 9,
+              "Title": "20250415143227_InicialCreate.cs",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Migrations\\20250415143227_InicialCreate.cs",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Migrations\\20250415143227_InicialCreate.cs",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Migrations\\20250415143227_InicialCreate.cs",
+              "RelativeToolTip": "CarFleetManagement\\Migrations\\20250415143227_InicialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T14:32:27.647Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 13,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\Car\\Add.cshtml",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\Car\\Add.cshtml",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\Car\\Add.cshtml",
+              "RelativeToolTip": "CarFleetManagement\\Views\\Car\\Add.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAswBQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-01T16:21:47.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\InsuranceExpense\\Edit.cshtml",
-              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\InsuranceExpense\\Edit.cshtml",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\InsuranceExpense\\Edit.cshtml",
-              "RelativeToolTip": "CarFleetManagement\\Views\\InsuranceExpense\\Edit.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAA9AAAAAAAAAA==",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\Car\\Edit.cshtml",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\Car\\Edit.cshtml",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\Car\\Edit.cshtml",
+              "RelativeToolTip": "CarFleetManagement\\Views\\Car\\Edit.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAswBcAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-08T15:59:20.823Z",
+              "WhenOpened": "2025-04-08T15:51:06.765Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CarFleetManagement\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABkAAAAAAAAAAAAwwCEAAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-01T16:57:41.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\InsuranceExpense\\Index.cshtml",
               "RelativeDocumentMoniker": "CarFleetManagement\\Views\\InsuranceExpense\\Index.cshtml",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\InsuranceExpense\\Index.cshtml",
-              "RelativeToolTip": "CarFleetManagement\\Views\\InsuranceExpense\\Index.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABgAAABDAAAAAAAAAA==",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\InsuranceExpense\\Index.cshtml*",
+              "RelativeToolTip": "CarFleetManagement\\Views\\InsuranceExpense\\Index.cshtml*",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-01T16:25:07.89Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\RepairExpense\\Index.cshtml",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\RepairExpense\\Index.cshtml",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\RepairExpense\\Index.cshtml",
+              "RelativeToolTip": "CarFleetManagement\\Views\\RepairExpense\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-01T16:26:06.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "CarFleetManagement\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAACUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-20T08:32:29.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "MonthlyReportViewModel.cs",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Models\\MonthlyReportViewModel.cs",
-              "RelativeDocumentMoniker": "CarFleetManagement\\Models\\MonthlyReportViewModel.cs",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Models\\MonthlyReportViewModel.cs",
-              "RelativeToolTip": "CarFleetManagement\\Models\\MonthlyReportViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T12:06:28.914Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\Car\\Index.cshtml",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\Car\\Index.cshtml",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\Car\\Index.cshtml",
+              "RelativeToolTip": "CarFleetManagement\\Views\\Car\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwBkAAAClAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-01T16:23:51.008Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MonthlyReportController.cs",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Controllers\\MonthlyReportController.cs",
-              "RelativeDocumentMoniker": "CarFleetManagement\\Controllers\\MonthlyReportController.cs",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Controllers\\MonthlyReportController.cs",
-              "RelativeToolTip": "CarFleetManagement\\Controllers\\MonthlyReportController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T12:06:48.658Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FuelExpenseController.cs",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Controllers\\FuelExpenseController.cs",
-              "RelativeDocumentMoniker": "CarFleetManagement\\Controllers\\FuelExpenseController.cs",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Controllers\\FuelExpenseController.cs",
-              "RelativeToolTip": "CarFleetManagement\\Controllers\\FuelExpenseController.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAAAGQAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T11:50:50.189Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "InsuranceExpenseViewModel.cs",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Models\\InsuranceExpenseViewModel.cs",
-              "RelativeDocumentMoniker": "CarFleetManagement\\Models\\InsuranceExpenseViewModel.cs",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Models\\InsuranceExpenseViewModel.cs",
-              "RelativeToolTip": "CarFleetManagement\\Models\\InsuranceExpenseViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T11:42:48.475Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "InsuranceExpense.cs",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Data\\Models\\InsuranceExpense.cs",
-              "RelativeDocumentMoniker": "CarFleetManagement\\Data\\Models\\InsuranceExpense.cs",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Data\\Models\\InsuranceExpense.cs",
-              "RelativeToolTip": "CarFleetManagement\\Data\\Models\\InsuranceExpense.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T11:31:04.621Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "RepairExpenseController.cs",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Controllers\\RepairExpenseController.cs",
-              "RelativeDocumentMoniker": "CarFleetManagement\\Controllers\\RepairExpenseController.cs",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Controllers\\RepairExpenseController.cs",
-              "RelativeToolTip": "CarFleetManagement\\Controllers\\RepairExpenseController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAgwCcAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T11:58:08.12Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ReportResult.cshtml",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\MonthlyReport\\ReportResult.cshtml",
-              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\MonthlyReport\\ReportResult.cshtml",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\MonthlyReport\\ReportResult.cshtml",
-              "RelativeToolTip": "CarFleetManagement\\Views\\MonthlyReport\\ReportResult.cshtml",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAswBoAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T14:25:43.031Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\MonthlyReport\\Index.cshtml",
-              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\MonthlyReport\\Index.cshtml",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\MonthlyReport\\Index.cshtml",
-              "RelativeToolTip": "CarFleetManagement\\Views\\MonthlyReport\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAOAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\FuelExpense\\Index.cshtml",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\FuelExpense\\Index.cshtml",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\FuelExpense\\Index.cshtml*",
+              "RelativeToolTip": "CarFleetManagement\\Views\\FuelExpense\\Index.cshtml*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-01T16:26:43.945Z",
+              "WhenOpened": "2025-02-01T16:24:27.535Z",
               "EditorCaption": ""
             },
             {
@@ -390,7 +363,7 @@
               "RelativeDocumentMoniker": "CarFleetManagement\\Controllers\\CarController.cs",
               "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Controllers\\CarController.cs",
               "RelativeToolTip": "CarFleetManagement\\Controllers\\CarController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAQwB4AAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAAwFsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-01T11:48:41.738Z",
               "EditorCaption": ""
@@ -398,84 +371,161 @@
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "FuelExpenseViewModel.cs",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Models\\FuelExpenseViewModel.cs",
-              "RelativeDocumentMoniker": "CarFleetManagement\\Models\\FuelExpenseViewModel.cs",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Models\\FuelExpenseViewModel.cs",
-              "RelativeToolTip": "CarFleetManagement\\Models\\FuelExpenseViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAyAAAAAAAAAA==",
+              "Title": "CarViewModel.cs",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Models\\CarViewModel.cs",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Models\\CarViewModel.cs",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Models\\CarViewModel.cs",
+              "RelativeToolTip": "CarFleetManagement\\Models\\CarViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T08:53:17.662Z",
+              "WhenOpened": "2025-04-15T14:23:21.991Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
+              "Title": "20250415142301_IncialCreate.cs",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Migrations\\20250415142301_IncialCreate.cs",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Migrations\\20250415142301_IncialCreate.cs",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Migrations\\20250415142301_IncialCreate.cs",
+              "RelativeToolTip": "CarFleetManagement\\Migrations\\20250415142301_IncialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T14:23:01.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FuelExpenseController.cs",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Controllers\\FuelExpenseController.cs",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Controllers\\FuelExpenseController.cs",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Controllers\\FuelExpenseController.cs",
+              "RelativeToolTip": "CarFleetManagement\\Controllers\\FuelExpenseController.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAgwIoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T11:50:50.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\appsettings.json",
+              "RelativeDocumentMoniker": "CarFleetManagement\\appsettings.json",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\appsettings.json",
+              "RelativeToolTip": "CarFleetManagement\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-01T11:16:54.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\RepairExpense\\Edit.cshtml",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\RepairExpense\\Edit.cshtml",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\RepairExpense\\Edit.cshtml",
+              "RelativeToolTip": "CarFleetManagement\\Views\\RepairExpense\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-08T16:03:51.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Car.cs",
               "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Data\\Models\\Car.cs",
               "RelativeDocumentMoniker": "CarFleetManagement\\Data\\Models\\Car.cs",
               "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Data\\Models\\Car.cs",
               "RelativeToolTip": "CarFleetManagement\\Data\\Models\\Car.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-01T11:24:11.203Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\RepairExpense\\Index.cshtml",
-              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\RepairExpense\\Index.cshtml",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\RepairExpense\\Index.cshtml",
-              "RelativeToolTip": "CarFleetManagement\\Views\\RepairExpense\\Index.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAApAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Program.cs",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Program.cs",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Program.cs",
+              "RelativeToolTip": "CarFleetManagement\\Program.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwC8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T19:16:03.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\InsuranceExpense\\Edit.cshtml",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\InsuranceExpense\\Edit.cshtml",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\InsuranceExpense\\Edit.cshtml",
+              "RelativeToolTip": "CarFleetManagement\\Views\\InsuranceExpense\\Edit.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-01T16:26:06.244Z",
+              "WhenOpened": "2025-04-08T15:59:20.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "CarFleetManagement\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T11:18:54.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\Car\\Details.cshtml",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\Car\\Details.cshtml",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\Car\\Details.cshtml",
+              "RelativeToolTip": "CarFleetManagement\\Views\\Car\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-08T15:54:28.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "InsuranceExpenseController.cs",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Controllers\\InsuranceExpenseController.cs",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Controllers\\InsuranceExpenseController.cs",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Controllers\\InsuranceExpenseController.cs",
+              "RelativeToolTip": "CarFleetManagement\\Controllers\\InsuranceExpenseController.cs",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAAwI8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T11:52:16.486Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\FuelExpense\\Index.cshtml",
-              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\FuelExpense\\Index.cshtml",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\FuelExpense\\Index.cshtml",
-              "RelativeToolTip": "CarFleetManagement\\Views\\FuelExpense\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-01T16:24:27.535Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\FuelExpense\\Details.cshtml",
-              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\FuelExpense\\Details.cshtml",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\FuelExpense\\Details.cshtml",
-              "RelativeToolTip": "CarFleetManagement\\Views\\FuelExpense\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-08T15:58:41.457Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "20250411143850_InicialCreate.cs",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Migrations\\20250411143850_InicialCreate.cs",
-              "RelativeDocumentMoniker": "CarFleetManagement\\Migrations\\20250411143850_InicialCreate.cs",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Migrations\\20250411143850_InicialCreate.cs",
-              "RelativeToolTip": "CarFleetManagement\\Migrations\\20250411143850_InicialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "RepairExpenseController.cs",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Controllers\\RepairExpenseController.cs",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Controllers\\RepairExpenseController.cs",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Controllers\\RepairExpenseController.cs",
+              "RelativeToolTip": "CarFleetManagement\\Controllers\\RepairExpenseController.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAuwIoAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T14:38:52.278Z",
+              "WhenOpened": "2025-02-01T11:58:08.12Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 17,
               "Title": "FuelExpense.cs",
               "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Data\\Models\\FuelExpense.cs",
               "RelativeDocumentMoniker": "CarFleetManagement\\Data\\Models\\FuelExpense.cs",
@@ -488,7 +538,151 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\FuelExpense\\Add.cshtml",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\FuelExpense\\Add.cshtml",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\FuelExpense\\Add.cshtml",
+              "RelativeToolTip": "CarFleetManagement\\Views\\FuelExpense\\Add.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-01T16:24:38.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "InsuranceExpenseViewModel.cs",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Models\\InsuranceExpenseViewModel.cs",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Models\\InsuranceExpenseViewModel.cs",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Models\\InsuranceExpenseViewModel.cs",
+              "RelativeToolTip": "CarFleetManagement\\Models\\InsuranceExpenseViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T11:42:48.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\FuelExpense\\Edit.cshtml",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\FuelExpense\\Edit.cshtml",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\FuelExpense\\Edit.cshtml",
+              "RelativeToolTip": "CarFleetManagement\\Views\\FuelExpense\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-08T15:57:36.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "FuelExpenseViewModel.cs",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Models\\FuelExpenseViewModel.cs",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Models\\FuelExpenseViewModel.cs",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Models\\FuelExpenseViewModel.cs",
+              "RelativeToolTip": "CarFleetManagement\\Models\\FuelExpenseViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T08:53:17.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ReportResult.cshtml",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\MonthlyReport\\ReportResult.cshtml",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\MonthlyReport\\ReportResult.cshtml",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\MonthlyReport\\ReportResult.cshtml",
+              "RelativeToolTip": "CarFleetManagement\\Views\\MonthlyReport\\ReportResult.cshtml",
+              "ViewState": "AgIAABAAAAAAAAAAAAAswB0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T14:25:43.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "MonthlyReportController.cs",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Controllers\\MonthlyReportController.cs",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Controllers\\MonthlyReportController.cs",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Controllers\\MonthlyReportController.cs",
+              "RelativeToolTip": "CarFleetManagement\\Controllers\\MonthlyReportController.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAywDwAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T12:06:48.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\InsuranceExpense\\Details.cshtml",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\InsuranceExpense\\Details.cshtml",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\InsuranceExpense\\Details.cshtml",
+              "RelativeToolTip": "CarFleetManagement\\Views\\InsuranceExpense\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-08T16:01:57.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\InsuranceExpense\\Delete.cshtml",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\InsuranceExpense\\Delete.cshtml",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\InsuranceExpense\\Delete.cshtml",
+              "RelativeToolTip": "CarFleetManagement\\Views\\InsuranceExpense\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-08T16:01:02.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\InsuranceExpense\\Add.cshtml",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\InsuranceExpense\\Add.cshtml",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\InsuranceExpense\\Add.cshtml",
+              "RelativeToolTip": "CarFleetManagement\\Views\\InsuranceExpense\\Add.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB8AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-01T16:25:24.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "InsuranceExpense.cs",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Data\\Models\\InsuranceExpense.cs",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Data\\Models\\InsuranceExpense.cs",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Data\\Models\\InsuranceExpense.cs",
+              "RelativeToolTip": "CarFleetManagement\\Data\\Models\\InsuranceExpense.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T11:31:04.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\MonthlyReport\\Index.cshtml",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\MonthlyReport\\Index.cshtml",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\MonthlyReport\\Index.cshtml",
+              "RelativeToolTip": "CarFleetManagement\\Views\\MonthlyReport\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-01T16:26:43.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\FuelExpense\\Details.cshtml",
+              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\FuelExpense\\Details.cshtml",
+              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\FuelExpense\\Details.cshtml",
+              "RelativeToolTip": "CarFleetManagement\\Views\\FuelExpense\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-08T15:58:41.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\FuelExpense\\Delete.cshtml",
               "RelativeDocumentMoniker": "CarFleetManagement\\Views\\FuelExpense\\Delete.cshtml",
@@ -496,12 +690,11 @@
               "RelativeToolTip": "CarFleetManagement\\Views\\FuelExpense\\Delete.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-08T15:58:07.955Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T15:58:07.955Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 38,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\RepairExpense\\Delete.cshtml",
               "RelativeDocumentMoniker": "CarFleetManagement\\Views\\RepairExpense\\Delete.cshtml",
@@ -509,12 +702,11 @@
               "RelativeToolTip": "CarFleetManagement\\Views\\RepairExpense\\Delete.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-08T16:04:24.09Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T16:04:24.09Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 39,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\RepairExpense\\Details.cshtml",
               "RelativeDocumentMoniker": "CarFleetManagement\\Views\\RepairExpense\\Details.cshtml",
@@ -522,12 +714,11 @@
               "RelativeToolTip": "CarFleetManagement\\Views\\RepairExpense\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-08T16:04:46.981Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T16:04:46.981Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 40,
               "Title": "RepairExpenseViewModel.cs",
               "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Models\\RepairExpenseViewModel.cs",
               "RelativeDocumentMoniker": "CarFleetManagement\\Models\\RepairExpenseViewModel.cs",
@@ -535,49 +726,11 @@
               "RelativeToolTip": "CarFleetManagement\\Models\\RepairExpenseViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T14:42:11.346Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T14:42:11.346Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Program.cs",
-              "RelativeDocumentMoniker": "CarFleetManagement\\Program.cs",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Program.cs",
-              "RelativeToolTip": "CarFleetManagement\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T19:16:03.294Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "CarFleetManagement\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAAAGEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-01T16:57:41.079Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\Car\\Details.cshtml",
-              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\Car\\Details.cshtml",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\Car\\Details.cshtml",
-              "RelativeToolTip": "CarFleetManagement\\Views\\Car\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-08T15:54:28.929Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 41,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "CarFleetManagement\\Properties\\launchSettings.json",
@@ -589,91 +742,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\appsettings.json",
-              "RelativeDocumentMoniker": "CarFleetManagement\\appsettings.json",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\appsettings.json",
-              "RelativeToolTip": "CarFleetManagement\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-01T11:16:54.514Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\RepairExpense\\Edit.cshtml",
-              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\RepairExpense\\Edit.cshtml",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\RepairExpense\\Edit.cshtml",
-              "RelativeToolTip": "CarFleetManagement\\Views\\RepairExpense\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-08T16:03:51.99Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "Add.cshtml",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\FuelExpense\\Add.cshtml",
-              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\FuelExpense\\Add.cshtml",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\FuelExpense\\Add.cshtml",
-              "RelativeToolTip": "CarFleetManagement\\Views\\FuelExpense\\Add.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAABIAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-01T16:24:38.552Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "CarFleetManagement\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "CarFleetManagement\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T11:18:54.601Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\FuelExpense\\Edit.cshtml",
-              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\FuelExpense\\Edit.cshtml",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\FuelExpense\\Edit.cshtml",
-              "RelativeToolTip": "CarFleetManagement\\Views\\FuelExpense\\Edit.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-08T15:57:36.574Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\Car\\Index.cshtml",
-              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\Car\\Index.cshtml",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\Car\\Index.cshtml",
-              "RelativeToolTip": "CarFleetManagement\\Views\\Car\\Index.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAwwBkAAAB4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-01T16:23:51.008Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\Car\\Edit.cshtml",
-              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\Car\\Edit.cshtml",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\Car\\Edit.cshtml",
-              "RelativeToolTip": "CarFleetManagement\\Views\\Car\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-08T15:51:06.765Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 43,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\Car\\Delete.cshtml",
               "RelativeDocumentMoniker": "CarFleetManagement\\Views\\Car\\Delete.cshtml",
@@ -685,7 +754,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 42,
               "Title": "Add.cshtml",
               "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\RepairExpense\\Add.cshtml",
               "RelativeDocumentMoniker": "CarFleetManagement\\Views\\RepairExpense\\Add.cshtml",
@@ -697,7 +766,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 45,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "CarFleetManagement\\Controllers\\HomeController.cs",
@@ -709,19 +778,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "Add.cshtml",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\Car\\Add.cshtml",
-              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\Car\\Add.cshtml",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\Car\\Add.cshtml",
-              "RelativeToolTip": "CarFleetManagement\\Views\\Car\\Add.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-01T16:21:47.599Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 44,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "CarFleetManagement\\Models\\ErrorViewModel.cs",
@@ -733,7 +790,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 46,
               "Title": "MonthlyReport.cs",
               "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Data\\Models\\MonthlyReport.cs",
               "RelativeDocumentMoniker": "CarFleetManagement\\Data\\Models\\MonthlyReport.cs",
@@ -745,7 +802,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 47,
               "Title": "RepairExpense.cs",
               "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Data\\Models\\RepairExpense.cs",
               "RelativeDocumentMoniker": "CarFleetManagement\\Data\\Models\\RepairExpense.cs",
@@ -757,19 +814,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "CarFleetManagement\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "CarFleetManagement\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACUAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-20T08:32:29.257Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 49,
               "Title": "CarService.cs",
               "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Services\\CarService.cs",
               "RelativeDocumentMoniker": "CarFleetManagement\\Services\\CarService.cs",
@@ -781,7 +826,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 48,
               "Title": "ICarService.cs",
               "DocumentMoniker": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Contracts\\ICarService.cs",
               "RelativeDocumentMoniker": "CarFleetManagement\\Contracts\\ICarService.cs",

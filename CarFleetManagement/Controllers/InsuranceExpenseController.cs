@@ -68,6 +68,7 @@ namespace CarFleetManagement.Controllers
 
             return RedirectToAction("Index");
         }
+        [Authorize(Roles = "Admin")]
         public IActionResult Edit(int id)
         {
             var item = db.InsuranceExpenses.Find(id);
@@ -93,6 +94,7 @@ namespace CarFleetManagement.Controllers
             return View(model);
         }
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public IActionResult Edit(InsuranceExpenseViewModel model)
         {
             if (ModelState.IsValid)
@@ -119,6 +121,7 @@ namespace CarFleetManagement.Controllers
     .ToList();
             return View(model);
         }
+        [Authorize(Roles = "Admin")]
         public IActionResult Delete(int id)
         {
             var item = db.InsuranceExpenses.Include(i => i.Car).FirstOrDefault(i => i.Id == id);
@@ -138,6 +141,7 @@ namespace CarFleetManagement.Controllers
             return View(model);
         }
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public IActionResult DeletePost(int id)
         {
             var item = db.InsuranceExpenses.Find(id);

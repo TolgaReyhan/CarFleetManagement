@@ -12,5 +12,12 @@ namespace CarFleetManagement.Models
         public DateTime PurchaseDate { get; set; }
         [Display(Name = "Пробег (км)")]
         public int Mileage { get; set; }
+        [Display(Name = "Технически преглед до")]
+        [DataType(DataType.Date)]
+        public DateTime? TechnicalCheckDate { get; set; }
+
+        [Display(Name = "Следваща смяна на масло")]
+        [DataType(DataType.Date)]
+        public DateTime? NextOilChangeDate { get; set; }
     }
 }

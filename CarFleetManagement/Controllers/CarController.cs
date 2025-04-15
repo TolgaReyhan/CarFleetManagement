@@ -45,7 +45,7 @@ namespace CarFleetManagement.Controllers
             if (!ModelState.IsValid)
                 return View(model);
 
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // текущият потребител
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var car = new Car
             {
                 Model = model.CarModel,
@@ -60,6 +60,7 @@ namespace CarFleetManagement.Controllers
 
             return RedirectToAction("Index");
         }
+        [Authorize(Roles = "Admin")]
         public IActionResult Edit(int id)
         {
             var car = db.Cars.FirstOrDefault(c => c.Id == id);
@@ -71,12 +72,13 @@ namespace CarFleetManagement.Controllers
                 CarModel = car.Model,
                 RegistrationNumber = car.RegistrationNumber,
                 PurchaseDate = car.PurchaseDate,
-                Mileage= car.Mileage
+                Mileage= car.Mileage,
             };
 
             return View(model);
         }
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public IActionResult Edit(CarViewModel model)
         {
             if (ModelState.IsValid)
@@ -95,6 +97,7 @@ namespace CarFleetManagement.Controllers
 
             return View(model);
         }
+        [Authorize(Roles = "Admin")]
         public IActionResult Delete(int id)
         {
             var car = db.Cars.Find(id);
@@ -112,6 +115,7 @@ namespace CarFleetManagement.Controllers
             return View(model);
         }
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public IActionResult DeletePost(int id)
         {
             var car = db.Cars.Find(id);

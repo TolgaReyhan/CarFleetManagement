@@ -55,10 +55,10 @@ namespace CarFleetManagement.Controllers
                     .Sum(r => (decimal?)r.Cost) ?? 0,
 
                 InsuranceCount = db.InsuranceExpenses
-                    .Count(i => i.CarId == car.Id && i.EndDate >= startDate && i.EndDate <= endDate),
+                    .Count(i => i.CarId == car.Id && i.StartDate >= startDate && i.StartDate <= endDate),
 
                 TotalInsuranceCost = db.InsuranceExpenses
-                    .Where(i => i.CarId == car.Id && i.EndDate >= startDate && i.EndDate <= endDate)
+                    .Where(i => i.CarId == car.Id && i.StartDate >= startDate && i.StartDate <= endDate)
                     .Sum(i => (decimal?)i.Amount) ?? 0
 
             }).ToList();

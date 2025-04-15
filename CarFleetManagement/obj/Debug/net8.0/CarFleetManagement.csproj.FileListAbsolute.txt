@@ -299,7 +299,6 @@ C:\Users\Student\Downloads\CarFleetManagement-master\CarFleetManagement\obj\Debu
 C:\Users\Student\Downloads\CarFleetManagement-master\CarFleetManagement\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Student\Downloads\CarFleetManagement-master\CarFleetManagement\obj\Debug\net8.0\scopedcss\bundle\CarFleetManagement.styles.css
 C:\Users\Student\Downloads\CarFleetManagement-master\CarFleetManagement\obj\Debug\net8.0\scopedcss\projectbundle\CarFleetManagement.bundle.scp.css
-C:\Users\Student\Downloads\CarFleetManagement-master\CarFleetManagement\obj\Debug\net8.0\CarFleetManagement.csproj.CopyComplete
 C:\Users\Student\Downloads\CarFleetManagement-master\CarFleetManagement\obj\Debug\net8.0\CarFleetManagement.dll
 C:\Users\Student\Downloads\CarFleetManagement-master\CarFleetManagement\obj\Debug\net8.0\refint\CarFleetManagement.dll
 C:\Users\Student\Downloads\CarFleetManagement-master\CarFleetManagement\obj\Debug\net8.0\CarFleetManagement.pdb
@@ -1809,3 +1808,19 @@ C:\Users\Student\Downloads\CarFleetManagement-d\CarFleetManagement\obj\Debug\net
 C:\Users\Student\Downloads\CarFleetManagement-d\CarFleetManagement\obj\Debug\net8.0\CarFleetManagement.pdb
 C:\Users\Student\Downloads\CarFleetManagement-d\CarFleetManagement\obj\Debug\net8.0\CarFleetManagement.genruntimeconfig.cache
 C:\Users\Student\Downloads\CarFleetManagement-d\CarFleetManagement\obj\Debug\net8.0\ref\CarFleetManagement.dll
+C:\Users\Student\Downloads\CarFleetManagement-master\CarFleetManagement\bin\Debug\net8.0\CarFleetManagement.staticwebassets.endpoints.json
+C:\Users\Student\Downloads\CarFleetManagement-master\CarFleetManagement\bin\Debug\net8.0\refs\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Student\Downloads\CarFleetManagement-master\CarFleetManagement\bin\Debug\net8.0\refs\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Student\Downloads\CarFleetManagement-master\CarFleetManagement\bin\Debug\net8.0\refs\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Student\Downloads\CarFleetManagement-master\CarFleetManagement\bin\Debug\net8.0\refs\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Student\Downloads\CarFleetManagement-master\CarFleetManagement\bin\Debug\net8.0\refs\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Student\Downloads\CarFleetManagement-master\CarFleetManagement\bin\Debug\net8.0\refs\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\Student\Downloads\CarFleetManagement-master\CarFleetManagement\bin\Debug\net8.0\refs\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Student\Downloads\CarFleetManagement-master\CarFleetManagement\bin\Debug\net8.0\refs\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Student\Downloads\CarFleetManagement-master\CarFleetManagement\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Student\Downloads\CarFleetManagement-master\CarFleetManagement\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.dll
+C:\Users\Student\Downloads\CarFleetManagement-master\CarFleetManagement\bin\Debug\net8.0\refs\Microsoft.Extensions.Options.dll
+C:\Users\Student\Downloads\CarFleetManagement-master\CarFleetManagement\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Student\Downloads\CarFleetManagement-master\CarFleetManagement\obj\Debug\net8.0\staticwebassets\msbuild.CarFleetManagement.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Student\Downloads\CarFleetManagement-master\CarFleetManagement\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Student\Downloads\CarFleetManagement-master\CarFleetManagement\obj\Debug\net8.0\CarFleet.45FD8985.Up2Date
