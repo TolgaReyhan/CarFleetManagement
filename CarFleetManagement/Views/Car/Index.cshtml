@@ -1,0 +1,37 @@
+﻿@model List<CarViewModel>
+
+<div class="container mt-4">
+    <h2 class="mb-3">Списък с автомобили</h2>
+    <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Модел</th>
+                <th>Рег. номер</th>
+                <th>Дата на закупуване</th>
+                <th>Пробег (км)</th>
+                <th>Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var car in Model)
+            {
+                <tr>
+                    <td>@car.CarModel</td>
+                    <td>@car.RegistrationNumber</td>
+                    <td>@car.PurchaseDate.ToShortDateString()</td>
+                    <td>@car.Mileage</td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@car.Id" class="btn btn-info btn-sm" style="color: white"><i class="fa-solid fa-circle-info"></i> Детайли</a>
+                        @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                        {
+                            <a asp-action="Edit" asp-route-id="@car.Id" class="btn btn-warning btn-sm" style="color: white"><i class="fa-solid fa-pen-to-square"></i> Редактирай</a>
+                            <a asp-action="Delete" asp-route-id="@car.Id" class="btn btn-danger btn-sm" style="color: white"><i class="fa-solid fa-trash"></i> Изтрий</a>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <a href="@Url.Action("Add")" class="btn btn-primary mt-3">Добави нов автомобил</a>
+</div>
