@@ -4,6 +4,7 @@ using CarFleetManagement.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Identity;
 
 namespace CarFleetManagement.Controllers
 {
@@ -20,16 +21,34 @@ namespace CarFleetManagement.Controllers
         public IActionResult Index()
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var cars = db.Cars
-                .Where(c => c.UserId == userId)
-                .Select(c => new CarViewModel
-                {
-                    Id = c.Id,
-                    CarModel = c.Model,
-                    RegistrationNumber = c.RegistrationNumber,
-                    PurchaseDate = c.PurchaseDate,
-                    Mileage = c.Mileage
-                }).ToList();
+            List<CarViewModel> cars;
+            bool isAdmin = User.IsInRole("Admin");
+            if (isAdmin)
+            {
+                cars = db.Cars
+                                       .Select(c => new CarViewModel
+                                       {
+                                           Id = c.Id,
+                                           CarModel = c.Model,
+                                           RegistrationNumber = c.RegistrationNumber,
+                                           PurchaseDate = c.PurchaseDate,
+                                           Mileage = c.Mileage
+                                       }).ToList();
+                                                }
+            else
+            {
+                cars = db.Cars
+                  .Where(c => c.UserId == userId)
+                  .Select(c => new CarViewModel
+                  {
+                      Id = c.Id,
+                      CarModel = c.Model,
+                      RegistrationNumber = c.RegistrationNumber,
+                      PurchaseDate = c.PurchaseDate,
+                      Mileage = c.Mileage
+                  }).ToList();
+
+            }
 
             return View(cars);
         }
@@ -72,7 +91,7 @@ namespace CarFleetManagement.Controllers
                 CarModel = car.Model,
                 RegistrationNumber = car.RegistrationNumber,
                 PurchaseDate = car.PurchaseDate,
-                Mileage= car.Mileage,
+                Mileage = car.Mileage,
             };
 
             return View(model);
@@ -109,7 +128,7 @@ namespace CarFleetManagement.Controllers
                 CarModel = car.Model,
                 RegistrationNumber = car.RegistrationNumber,
                 PurchaseDate = car.PurchaseDate,
-                Mileage= car.Mileage
+                Mileage = car.Mileage
             };
 
             return View(model);

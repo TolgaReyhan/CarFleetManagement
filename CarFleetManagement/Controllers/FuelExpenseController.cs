@@ -25,8 +25,25 @@ namespace CarFleetManagement.Controllers
         public IActionResult Index()
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-            var expenses = db.FuelExpenses
+            List<FuelExpenseViewModel> expenses;
+            bool isAdmin = User.IsInRole("Admin");
+            if (isAdmin)
+            {
+                expenses = db.FuelExpenses
+                .Include(e => e.Car)
+                .Select(e => new FuelExpenseViewModel
+                {
+                    Id = e.Id,
+                    CarId = e.CarId,
+                    CarDisplayName = e.Car.Model + " (" + e.Car.RegistrationNumber + ")",
+                    Liters = e.Liters,
+                    Amount = e.Amount,
+                    Date = e.Date
+                }).ToList();
+            }
+            else
+            {
+                expenses = db.FuelExpenses
                 .Where(e => e.Car.UserId == userId)
                 .Include(e => e.Car)
                 .Select(e => new FuelExpenseViewModel
@@ -38,7 +55,7 @@ namespace CarFleetManagement.Controllers
                     Amount = e.Amount,
                     Date = e.Date
                 }).ToList();
-
+            }
             return View(expenses);
         }
 

@@ -26,9 +26,11 @@ namespace CarFleetManagement.Controllers
         public IActionResult Index()
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-            var insurances = db.InsuranceExpenses
-                .Where(i => i.Car.UserId == userId)
+            List<InsuranceExpenseViewModel> insurances;
+            bool isAdmin = User.IsInRole("Admin");
+            if (isAdmin)
+            {
+                insurances = db.InsuranceExpenses
                 .Include(i => i.Car)
                 .Select(i => new InsuranceExpenseViewModel
                 {
@@ -40,7 +42,23 @@ namespace CarFleetManagement.Controllers
                     StartDate = i.StartDate,
                     EndDate = i.EndDate
                 }).ToList();
-
+            }
+            else
+            {
+                insurances = db.InsuranceExpenses
+               .Where(i => i.Car.UserId == userId)
+               .Include(i => i.Car)
+               .Select(i => new InsuranceExpenseViewModel
+               {
+                   Id = i.Id,
+                   CarId = i.CarId,
+                   CarDisplayName = i.Car.Model + " (" + i.Car.RegistrationNumber + ")",
+                   Provider = i.Provider,
+                   Amount = i.Amount,
+                   StartDate = i.StartDate,
+                   EndDate = i.EndDate
+               }).ToList();
+            }
             return View(insurances);
         }
 

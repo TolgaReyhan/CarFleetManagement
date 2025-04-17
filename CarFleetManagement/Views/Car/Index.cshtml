@@ -21,9 +21,12 @@
                     <td>@car.PurchaseDate.ToShortDateString()</td>
                     <td>@car.Mileage</td>
                     <td>
-                        <a asp-action="Edit" asp-route-id="@car.Id" class="btn btn-warning btn-sm" style="color: white"><i class="fa-solid fa-pen-to-square"></i> Редактирай</a>
                         <a asp-action="Details" asp-route-id="@car.Id" class="btn btn-info btn-sm" style="color: white"><i class="fa-solid fa-circle-info"></i> Детайли</a>
-                        <a asp-action="Delete" asp-route-id="@car.Id" class="btn btn-danger btn-sm" style="color: white"><i class="fa-solid fa-trash"></i> Изтрий</a>
+                        @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                        {
+                            <a asp-action="Edit" asp-route-id="@car.Id" class="btn btn-warning btn-sm" style="color: white"><i class="fa-solid fa-pen-to-square"></i> Редактирай</a>
+                            <a asp-action="Delete" asp-route-id="@car.Id" class="btn btn-danger btn-sm" style="color: white"><i class="fa-solid fa-trash"></i> Изтрий</a>
+                        }
                     </td>
                 </tr>
             }

@@ -26,8 +26,25 @@ namespace CarFleetManagement.Controllers
         public IActionResult Index()
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-            var repairs = db.RepairExpenses
+            List<RepairExpenseViewModel> repairs;
+            bool isAdmin = User.IsInRole("Admin");
+            if (isAdmin)
+            {
+                repairs = db.RepairExpenses
+                .Include(r => r.Car)
+                .Select(r => new RepairExpenseViewModel
+                {
+                    Id = r.Id,
+                    CarId = r.CarId,
+                    CarDisplayName = r.Car.Model + " (" + r.Car.RegistrationNumber + ")",
+                    Description = r.Description,
+                    Cost = r.Cost,
+                    Date = r.Date
+                }).ToList();
+            }
+            else
+            {
+                repairs = db.RepairExpenses
                 .Where(r => r.Car.UserId == userId)
                 .Include(r => r.Car)
                 .Select(r => new RepairExpenseViewModel
@@ -39,7 +56,7 @@ namespace CarFleetManagement.Controllers
                     Cost = r.Cost,
                     Date = r.Date
                 }).ToList();
-
+            }         
             return View(repairs);
         }
 
