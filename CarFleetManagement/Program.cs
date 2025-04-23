@@ -1,4 +1,4 @@
-﻿using CarFleetManagement.Contracts;
+using CarFleetManagement.Contracts;
 using CarFleetManagement.Data;
 using CarFleetManagement.Services;
 using Microsoft.AspNetCore.Identity;
