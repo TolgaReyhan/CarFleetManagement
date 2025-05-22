@@ -1,5 +1,6 @@
 using CarFleetManagement.Contracts;
 using CarFleetManagement.Data;
+using CarFleetManagement.Data.Models;
 using CarFleetManagement.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -20,7 +21,7 @@ namespace CarFleetManagement
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
             builder.Services.AddRazorPages()
                 .AddRazorRuntimeCompilation();
-            builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
             builder.Services.AddControllersWithViews();
@@ -33,7 +34,7 @@ namespace CarFleetManagement
                 var serviceProvider = scope.ServiceProvider;
 
                 var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-                var userManager = serviceProvider.GetRequiredService<UserManager<IdentityUser>>();
+                var userManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
 
                 string[] roles = { "Admin", "User" };
                 foreach (var role in roles)
@@ -50,10 +51,15 @@ namespace CarFleetManagement
                 var adminUser = await userManager.FindByEmailAsync(adminEmail);
                 if (adminUser == null)
                 {
-                    adminUser = new IdentityUser { UserName = adminEmail, Email = adminEmail, EmailConfirmed = true };
+                    adminUser = new ApplicationUser { UserName = adminEmail, Email = adminEmail, EmailConfirmed = true };
                     await userManager.CreateAsync(adminUser, adminPassword);
                     await userManager.AddToRoleAsync(adminUser, "Admin");
                 }
+
+                // SEED THE DATABASE HERE
+                var db = serviceProvider.GetRequiredService<ApplicationDbContext>();
+                var adminUserId = adminUser.Id;
+                DatabaseSeeder.Seed(db, adminUserId);
             }
 
             // Configure the HTTP request pipeline.

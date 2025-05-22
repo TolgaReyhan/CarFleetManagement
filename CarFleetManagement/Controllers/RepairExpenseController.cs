@@ -83,11 +83,14 @@ namespace CarFleetManagement.Controllers
 
             return RedirectToAction("Index");
         }
-        [Authorize(Roles = "Admin")]
         public IActionResult Edit(int id)
         {
-            var item = db.RepairExpenses.Find(id);
+            var item = db.RepairExpenses.Include(r => r.Car).FirstOrDefault(r => r.Id == id);
             if (item == null) return NotFound();
+
+            bool isAdmin = User.IsInRole("Admin");
+            var userId = User.FindFirstValue(System.Security.Claims.ClaimTypes.NameIdentifier);
+            if (!isAdmin && item.Car.UserId != userId) return Forbid();
 
             var model = new RepairExpenseViewModel
             {
@@ -99,18 +102,21 @@ namespace CarFleetManagement.Controllers
             };
 
             ViewBag.Cars = db.Cars
-    .Select(c => new SelectListItem
-    {
-        Value = c.Id.ToString(),
-        Text = $"{c.Model} ({c.RegistrationNumber})"
-    })
-    .ToList();
+                .Where(c => isAdmin || c.UserId == userId)
+                .Select(c => new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
+                {
+                    Value = c.Id.ToString(),
+                    Text = $"{c.Model} ({c.RegistrationNumber})"
+                })
+                .ToList();
             return View(model);
         }
         [HttpPost]
-        [Authorize(Roles = "Admin")]
         public IActionResult Edit(RepairExpenseViewModel model)
         {
+            ModelState.Remove("CarDisplayName");
+            ModelState.Remove("Brand");
+            ModelState.Remove("FuelType");
             if (ModelState.IsValid)
             {
                 var item = db.RepairExpenses.Find(model.Id);
@@ -134,7 +140,6 @@ namespace CarFleetManagement.Controllers
     .ToList();
             return View(model);
         }
-        [Authorize(Roles = "Admin")]
         public IActionResult Delete(int id)
         {
             var item = db.RepairExpenses.Include(r => r.Car).FirstOrDefault(r => r.Id == id);
@@ -153,7 +158,6 @@ namespace CarFleetManagement.Controllers
             return View(model);
         }
         [HttpPost]
-        [Authorize(Roles = "Admin")]
         public IActionResult DeletePost(int id)
         {
             var item = db.RepairExpenses.Find(id);
@@ -165,16 +169,18 @@ namespace CarFleetManagement.Controllers
         }
         public IActionResult Details(int id)
         {
-            var item = db.RepairExpenses.Include(r => r.Car).FirstOrDefault(r => r.Id == id);
-            if (item == null) return NotFound();
+            var repair = db.RepairExpenses.Include(r => r.Car).FirstOrDefault(r => r.Id == id);
+            if (repair == null) return NotFound();
             var model = new RepairExpenseViewModel
             {
-                Id = item.Id,
-                CarId = item.CarId,
-                CarDisplayName = item.Car.Model + " (" + item.Car.RegistrationNumber + ")",
-                Description = item.Description,
-                Cost = item.Cost,
-                Date = item.Date
+                Id = repair.Id,
+                CarId = repair.CarId,
+                CarDisplayName = repair.Car.Model + " (" + repair.Car.RegistrationNumber + ")",
+                Description = repair.Description,
+                Cost = repair.Cost,
+                Date = repair.Date,
+                Brand = repair.Car.Brand,
+                FuelType = repair.Car.FuelType
             };
             return View(model);
         }

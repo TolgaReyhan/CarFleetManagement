@@ -2,7 +2,36 @@
 
 <div class="container mt-4">
     <h2 class="mb-3">Добавяне на автомобил</h2>
-    <form asp-action="Add" method="post" class="border p-4 rounded shadow bg-light">
+    <form asp-action="Add" method="post" enctype="multipart/form-data" class="border p-4 rounded shadow bg-light">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="mb-3">
+            <label class="form-label" style="color:black">Марка:</label>
+            <select asp-for="Brand" class="form-control">
+                <option value="">Изберете марка</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Volkswagen">Volkswagen</option>
+                <option value="BMW">BMW</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="Ford">Ford</option>
+                <option value="Renault">Renault</option>
+                <option value="Peugeot">Peugeot</option>
+                <option value="Opel">Opel</option>
+                <option value="Audi">Audi</option>
+                <option value="Другa">Друга</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" style="color:black">Вид гориво:</label>
+            <select asp-for="FuelType" class="form-control">
+                <option value="">Изберете вид гориво</option>
+                <option value="Бензин">Бензин</option>
+                <option value="Дизел">Дизел</option>
+                <option value="Газ">Газ</option>
+                <option value="Електрически">Електрически</option>
+                <option value="Хибрид">Хибрид</option>
+                <option value="Друго">Друго</option>
+            </select>
+        </div>
         <div class="mb-3">
             <label class="form-label" style="color:black">Модел:</label>
             <input asp-for="CarModel" class="form-control" />

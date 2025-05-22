@@ -16,6 +16,8 @@
                 <th>Ремонти (стойност)</th>
                 <th>Застраховки (брой)</th>
                 <th>Застраховки (стойност)</th>
+                <th>Период (дни)</th>
+                <th>Средна стойност на гориво на ден (лв.)</th>
             </tr>
         </thead>
         <tbody>
@@ -29,6 +31,8 @@
                         <td>@report.TotalRepairCost</td>
                         <td>@report.InsuranceCount</td>
                         <td>@report.TotalInsuranceCost</td>
+                        <td>@report.ReportingDays</td>
+                        <td>@report.AverageFuelCostPerDay.ToString("F2")</td>
                     </tr>
             }
         </tbody>

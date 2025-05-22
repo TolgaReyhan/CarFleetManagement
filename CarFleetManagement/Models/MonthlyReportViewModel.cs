@@ -17,5 +17,8 @@
         public int InsuranceCount { get; set; }
         public decimal TotalInsuranceCost { get; set; }
         public string CarDisplayName { get; set; }
+
+        public int ReportingDays { get; set; }
+        public decimal AverageFuelCostPerDay { get; set; }
     }
 }

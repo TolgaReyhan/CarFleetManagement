@@ -5,6 +5,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Http;
+using System.IO;
+using System.ComponentModel.DataAnnotations;
 
 namespace CarFleetManagement.Controllers
 {
@@ -61,8 +64,7 @@ namespace CarFleetManagement.Controllers
         [HttpPost]
         public async Task<IActionResult> Add(CarViewModel model)
         {
-            if (!ModelState.IsValid)
-                return View(model);
+            
 
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var car = new Car
@@ -71,12 +73,12 @@ namespace CarFleetManagement.Controllers
                 RegistrationNumber = model.RegistrationNumber,
                 PurchaseDate = model.PurchaseDate,
                 Mileage = model.Mileage,
-                UserId = userId
+                UserId = userId,
+                Brand = model.Brand,
+                FuelType = model.FuelType,
             };
-
             db.Cars.Add(car);
             await db.SaveChangesAsync();
-
             return RedirectToAction("Index");
         }
         [Authorize(Roles = "Admin")]
@@ -98,22 +100,21 @@ namespace CarFleetManagement.Controllers
         }
         [HttpPost]
         [Authorize(Roles = "Admin")]
-        public IActionResult Edit(CarViewModel model)
+        public async Task<IActionResult> Edit(CarViewModel model)
         {
             if (ModelState.IsValid)
             {
                 var car = db.Cars.FirstOrDefault(c => c.Id == model.Id);
                 if (car == null) return NotFound();
-
                 car.Model = model.CarModel;
                 car.RegistrationNumber = model.RegistrationNumber;
                 car.PurchaseDate = model.PurchaseDate;
                 car.Mileage = model.Mileage;
-
+                car.Brand = model.Brand;
+                car.FuelType = model.FuelType;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-
             return View(model);
         }
         [Authorize(Roles = "Admin")]
@@ -152,6 +153,8 @@ namespace CarFleetManagement.Controllers
 
             var model = new CarViewModel
             {
+                Brand = car.Brand,
+                FuelType = car.FuelType,
                 Id = car.Id,
                 CarModel = car.Model,
                 RegistrationNumber = car.RegistrationNumber,

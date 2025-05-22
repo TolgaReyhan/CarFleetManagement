@@ -4,6 +4,11 @@
     ViewData["Title"] = "Админ панел - Потребители";
 }
 
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+
 <h2>Потребители</h2>
 
 <table class="table table-bordered table-striped">

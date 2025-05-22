@@ -5,14 +5,20 @@
 <div class="container mt-4">
     <h2>@ViewData["Title"]</h2>
     <dl class="row">
+        <dt class="col-sm-3">Марка</dt>
+        <dd class="col-sm-9">@Model.Brand</dd>
+
         <dt class="col-sm-3">Модел</dt>
         <dd class="col-sm-9">@Model.CarModel</dd>
+
+        <dt class="col-sm-3">Вид гориво</dt>
+        <dd class="col-sm-9">@Model.FuelType</dd>
 
         <dt class="col-sm-3">Регистрационен номер</dt>
         <dd class="col-sm-9">@Model.RegistrationNumber</dd>
 
         <dt class="col-sm-3">Година на закупване</dt>
-        <dd class="col-sm-9">@Model.PurchaseDate</dd>
+        <dd class="col-sm-9">@Model.PurchaseDate.ToShortDateString()</dd>
 
         <dt class="col-sm-3">Пробег</dt>
         <dd class="col-sm-9">@Model.Mileage</dd>

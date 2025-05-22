@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\CarFleetManagement.props" />
-</Project>

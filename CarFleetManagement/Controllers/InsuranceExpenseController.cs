@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace CarFleetManagement.Controllers
 {
@@ -64,14 +65,40 @@ namespace CarFleetManagement.Controllers
 
         public IActionResult Add()
         {
-            Dictionary<int, string> carIdNames = carService.GetCarNamesAndIds();
-            ViewData["car-info"] = carIdNames;
+            var userId = User.FindFirstValue(System.Security.Claims.ClaimTypes.NameIdentifier);
+            bool isAdmin = User.IsInRole("Admin");
+            ViewBag.Cars = db.Cars
+                .Where(c => isAdmin || c.UserId == userId)
+                .Select(c => new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
+                {
+                    Value = c.Id.ToString(),
+                    Text = $"{c.Model} ({c.RegistrationNumber})"
+                })
+                .ToList();
             return View();
         }
 
         [HttpPost]
         public IActionResult Add(InsuranceExpenseViewModel model)
         {
+            ModelState.Remove("CarDisplayName");
+            ModelState.Remove("Brand");
+            ModelState.Remove("FuelType");
+            if (!ModelState.IsValid)
+            {
+                var userId = User.FindFirstValue(System.Security.Claims.ClaimTypes.NameIdentifier);
+                bool isAdmin = User.IsInRole("Admin");
+                ViewBag.Cars = db.Cars
+                    .Where(c => isAdmin || c.UserId == userId)
+                    .Select(c => new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
+                    {
+                        Value = c.Id.ToString(),
+                        Text = $"{c.Model} ({c.RegistrationNumber})"
+                    })
+                    .ToList();
+                return View(model);
+            }
+
             var insurance = new InsuranceExpense
             {
                 CarId = model.CarId,
@@ -86,11 +113,14 @@ namespace CarFleetManagement.Controllers
 
             return RedirectToAction("Index");
         }
-        [Authorize(Roles = "Admin")]
         public IActionResult Edit(int id)
         {
-            var item = db.InsuranceExpenses.Find(id);
+            var item = db.InsuranceExpenses.Include(i => i.Car).FirstOrDefault(i => i.Id == id);
             if (item == null) return NotFound();
+
+            bool isAdmin = User.IsInRole("Admin");
+            var userId = User.FindFirstValue(System.Security.Claims.ClaimTypes.NameIdentifier);
+            if (!isAdmin && item.Car.UserId != userId) return Forbid();
 
             var model = new InsuranceExpenseViewModel
             {
@@ -103,47 +133,58 @@ namespace CarFleetManagement.Controllers
             };
 
             ViewBag.Cars = db.Cars
-    .Select(c => new SelectListItem
-    {
-        Value = c.Id.ToString(),
-        Text = $"{c.Model} ({c.RegistrationNumber})"
-    })
-    .ToList();
+                .Where(c => isAdmin || c.UserId == userId)
+                .Select(c => new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
+                {
+                    Value = c.Id.ToString(),
+                    Text = $"{c.Model} ({c.RegistrationNumber})"
+                })
+                .ToList();
             return View(model);
         }
         [HttpPost]
-        [Authorize(Roles = "Admin")]
         public IActionResult Edit(InsuranceExpenseViewModel model)
         {
-            if (ModelState.IsValid)
+            ModelState.Remove("CarDisplayName");
+            ModelState.Remove("Brand");
+            ModelState.Remove("FuelType");
+            if (!ModelState.IsValid)
             {
-                var item = db.InsuranceExpenses.Find(model.Id);
-                if (item == null) return NotFound();
-
-                item.CarId = model.CarId;
-                item.Provider = model.Provider;
-                item.Amount = model.Amount;
-                item.StartDate = model.StartDate;
-                item.EndDate = model.EndDate;
-
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                var userId = User.FindFirstValue(System.Security.Claims.ClaimTypes.NameIdentifier);
+                bool isAdmin = User.IsInRole("Admin");
+                ViewBag.Cars = db.Cars
+                    .Where(c => isAdmin || c.UserId == userId)
+                    .Select(c => new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
+                    {
+                        Value = c.Id.ToString(),
+                        Text = $"{c.Model} ({c.RegistrationNumber})"
+                    })
+                    .ToList();
+                return View(model);
             }
 
-            ViewBag.Cars = db.Cars
-    .Select(c => new SelectListItem
-    {
-        Value = c.Id.ToString(),
-        Text = $"{c.Model} ({c.RegistrationNumber})"
-    })
-    .ToList();
-            return View(model);
+            var item = db.InsuranceExpenses.Include(i => i.Car).FirstOrDefault(i => i.Id == model.Id);
+            if (item == null) return NotFound();
+            bool isAdminEdit = User.IsInRole("Admin");
+            var userIdEdit = User.FindFirstValue(System.Security.Claims.ClaimTypes.NameIdentifier);
+            if (!isAdminEdit && item.Car.UserId != userIdEdit) return Forbid();
+
+            item.CarId = model.CarId;
+            item.Provider = model.Provider;
+            item.Amount = model.Amount;
+            item.StartDate = model.StartDate;
+            item.EndDate = model.EndDate;
+
+            db.SaveChanges();
+            return RedirectToAction("Index");
         }
-        [Authorize(Roles = "Admin")]
         public IActionResult Delete(int id)
         {
             var item = db.InsuranceExpenses.Include(i => i.Car).FirstOrDefault(i => i.Id == id);
             if (item == null) return NotFound();
+            bool isAdmin = User.IsInRole("Admin");
+            var userId = User.FindFirstValue(System.Security.Claims.ClaimTypes.NameIdentifier);
+            if (!isAdmin && item.Car.UserId != userId) return Forbid();
 
             var model = new InsuranceExpenseViewModel
             {
@@ -159,14 +200,17 @@ namespace CarFleetManagement.Controllers
             return View(model);
         }
         [HttpPost]
-        [Authorize(Roles = "Admin")]
         public IActionResult DeletePost(int id)
         {
-            var item = db.InsuranceExpenses.Find(id);
+            var item = db.InsuranceExpenses.Include(i => i.Car).FirstOrDefault(i => i.Id == id);
             if (item == null) return NotFound();
+            bool isAdmin = User.IsInRole("Admin");
+            var userId = User.FindFirstValue(System.Security.Claims.ClaimTypes.NameIdentifier);
+            if (!isAdmin && item.Car.UserId != userId) return Forbid();
 
             db.InsuranceExpenses.Remove(item);
             db.SaveChanges();
+
             return RedirectToAction("Index");
         }
         public IActionResult Details(int id)
@@ -181,7 +225,9 @@ namespace CarFleetManagement.Controllers
                 Provider = item.Provider,
                 Amount = item.Amount,
                 StartDate = item.StartDate,
-                EndDate = item.EndDate
+                EndDate = item.EndDate,
+                Brand = item.Car.Brand,
+                FuelType = item.Car.FuelType
             };
             return View(model);
         }

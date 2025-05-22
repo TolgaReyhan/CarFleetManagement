@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Http;
 
 namespace CarFleetManagement.Models
 {
@@ -19,5 +20,10 @@ namespace CarFleetManagement.Models
         [Display(Name = "Следваща смяна на масло")]
         [DataType(DataType.Date)]
         public DateTime? NextOilChangeDate { get; set; }
+
+        [Display(Name = "Марка")]
+        public string Brand { get; set; }
+        [Display(Name = "Вид гориво")]
+        public string FuelType { get; set; }
     }
 }

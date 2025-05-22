@@ -6,12 +6,16 @@
     <dl class="row">
         <dt class="col-sm-3">Автомобил</dt>
         <dd class="col-sm-9">@Model.CarDisplayName</dd>
+        <dt class="col-sm-3">Марка</dt>
+        <dd class="col-sm-9">@Model.Brand</dd>
+        <dt class="col-sm-3">Вид гориво</dt>
+        <dd class="col-sm-9">@Model.FuelType</dd>
         <dt class="col-sm-3">Описание</dt>
         <dd class="col-sm-9">@Model.Description</dd>
         <dt class="col-sm-3">Цена</dt>
         <dd class="col-sm-9">@Model.Cost</dd>
         <dt class="col-sm-3">Дата</dt>
-        <dd class="col-sm-9">@Model.Date</dd>
+        <dd class="col-sm-9">@Model.Date.ToShortDateString()</dd>
     </dl>
     <a asp-action="Index" class="btn btn-primary">Назад</a>
 </div>
