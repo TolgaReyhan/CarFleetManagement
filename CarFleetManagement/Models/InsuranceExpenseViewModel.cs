@@ -6,15 +6,25 @@ namespace CarFleetManagement.Models
     public class InsuranceExpenseViewModel
     {
         public int Id { get; set; }
+        [Required(ErrorMessage = "Изберете автомобил.")]
+        public int CarId { get; set; }
+        [BindNever]
+        public string CarDisplayName { get; set; }
+        [BindNever]
+        public string Brand { get; set; }
+        [BindNever]
+        public string FuelType { get; set; }
+        [Required(ErrorMessage = "Въведете компания.")]
         public string Provider { get; set; }
+        [Required(ErrorMessage = "Въведете сума.")]
+        [Range(0.01, double.MaxValue, ErrorMessage = "Сумата трябва да е положително число.")]
         public decimal Amount { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Въведете начална дата.")]
         [DataType(DataType.Date)]
         [Display(Name = "Начална дата")]
         [CustomValidation(typeof(InsuranceExpenseViewModel), nameof(ValidateStartDate))]
         public DateTime StartDate { get; set; }
-
-        [Required]
+        [Required(ErrorMessage = "Въведете крайна дата.")]
         [DataType(DataType.Date)]
         [Display(Name = "Крайна дата")]
         [CustomValidation(typeof(InsuranceExpenseViewModel), nameof(ValidateEndDate))]
@@ -41,12 +51,5 @@ namespace CarFleetManagement.Models
 
             return ValidationResult.Success;
         }
-        public int CarId { get; set; }
-        [BindNever]
-        public string CarDisplayName { get; set; }
-        [BindNever]
-        public string Brand { get; set; }
-        [BindNever]
-        public string FuelType { get; set; }
     }
 }

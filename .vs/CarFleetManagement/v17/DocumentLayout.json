@@ -228,7 +228,7 @@
               "RelativeDocumentMoniker": "CarFleetManagement\\Migrations\\20250522192559_InicialCreate.cs",
               "ToolTip": "D:\\Visual studio\\VS programs\\CarFleetManagement\\CarFleetManagement\\Migrations\\20250522192559_InicialCreate.cs",
               "RelativeToolTip": "CarFleetManagement\\Migrations\\20250522192559_InicialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-22T19:26:00.089Z",
               "EditorCaption": ""
@@ -243,8 +243,7 @@
               "RelativeToolTip": "CarFleetManagement\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T11:18:54.601Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-01T11:18:54.601Z"
             },
             {
               "$type": "Document",
@@ -256,8 +255,7 @@
               "RelativeToolTip": "CarFleetManagement\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T19:16:03.294Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-23T19:16:03.294Z"
             },
             {
               "$type": "Document",
@@ -269,8 +267,7 @@
               "RelativeToolTip": "CarFleetManagement\\Data\\DatabaseSeeder.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAgwBUAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T18:34:49.269Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-22T18:34:49.269Z"
             },
             {
               "$type": "Document",
@@ -282,8 +279,7 @@
               "RelativeToolTip": "CarFleetManagement\\Controllers\\FuelExpenseController.cs",
               "ViewState": "AgIAADsAAAAAAAAAAAAqwFIAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T11:50:50.189Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-01T11:50:50.189Z"
             },
             {
               "$type": "Document",
@@ -295,8 +291,7 @@
               "RelativeToolTip": "CarFleetManagement\\Views\\FuelExpense\\Add.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-01T16:24:38.552Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-01T16:24:38.552Z"
             },
             {
               "$type": "Document",
@@ -308,8 +303,7 @@
               "RelativeToolTip": "CarFleetManagement\\Views\\InsuranceExpense\\Add.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-01T16:25:24.463Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-01T16:25:24.463Z"
             },
             {
               "$type": "Document",
@@ -321,8 +315,7 @@
               "RelativeToolTip": "CarFleetManagement\\Models\\InsuranceExpenseViewModel.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAmwDMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T11:42:48.475Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-01T11:42:48.475Z"
             },
             {
               "$type": "Document",
@@ -334,8 +327,7 @@
               "RelativeToolTip": "CarFleetManagement\\Controllers\\InsuranceExpenseController.cs",
               "ViewState": "AgIAAEsAAAAAAAAAAAAQwFMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T11:52:16.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-01T11:52:16.486Z"
             },
             {
               "$type": "Document",
@@ -347,8 +339,7 @@
               "RelativeToolTip": "CarFleetManagement\\Controllers\\RepairExpenseController.cs",
               "ViewState": "AgIAADQAAAAAAAAAAAAgwE4AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T11:58:08.12Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-01T11:58:08.12Z"
             },
             {
               "$type": "Document",
@@ -528,8 +519,7 @@
               "RelativeToolTip": "CarFleetManagement\\Controllers\\CarController.cs",
               "ViewState": "AgIAAHYAAAAAAAAAAAAvwJwAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T11:48:41.738Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-01T11:48:41.738Z"
             },
             {
               "$type": "Document",
